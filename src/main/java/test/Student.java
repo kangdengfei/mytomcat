@@ -1,7 +1,6 @@
 package test;
 
 import com.annotation.Bean;
-import com.mytomac.Person;
 
 /**
  * @program: mytomcat

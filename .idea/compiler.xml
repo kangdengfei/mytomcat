@@ -6,7 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mytomcat" />
+        <module name="mytomcat-core" />
+        <module name="mytomcat-example" />
       </profile>
     </annotationProcessing>
   </component>
