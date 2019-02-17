@@ -9,7 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>com.mytomcat.core</artifactId>
+    <artifactId>mytomcat-core</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>mytomcat-core</name>
     <dependencies>
 
         <!--类扫描器-->
@@ -31,11 +34,7 @@
             <artifactId>slf4j-simple</artifactId>
             <version>1.8.0-beta0</version>
         </dependency>
-        <dependency>
-            <groupId>com.mytomcat</groupId>
-            <artifactId>mytomcat</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+
     </dependencies>
 
 </project>
