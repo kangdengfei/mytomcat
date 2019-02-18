@@ -1,6 +1,6 @@
 package com.mytomcat.example;
 
-import com.mytomcat.bean.DefaultBeanContext;
+import com.mytomcat.bean.imp.DefaultBeanContext;
 
 /**
  * @program: mytomcat

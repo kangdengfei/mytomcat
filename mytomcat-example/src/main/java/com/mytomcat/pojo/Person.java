@@ -1,4 +1,4 @@
-package com.mytomcat.mytomact;
+package com.mytomcat.pojo;
 
 import com.mytomcat.annotation.Bean;
 

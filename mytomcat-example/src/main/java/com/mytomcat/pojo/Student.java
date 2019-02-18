@@ -1,4 +1,4 @@
-package com.mytomcat.mytomact;
+package com.mytomcat.pojo;
 
 import com.mytomcat.annotation.Autowired;
 import com.mytomcat.annotation.Bean;
@@ -8,7 +8,7 @@ import com.mytomcat.annotation.Bean;
  * @author: KDF
  * @create: 2019-02-16 17:09
  **/
-@Bean
+
 public class Student {
     @Autowired
     public Person person;

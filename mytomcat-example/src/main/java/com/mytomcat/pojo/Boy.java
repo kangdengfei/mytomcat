@@ -1,13 +1,13 @@
-package com.mytomcat.mytomact;
+package com.mytomcat.pojo;
 
-import com.mytomcat.annotation.Bean;
+import com.mytomcat.annotation.Controller;
 
 /**
  * @program: mytomcat
  * @author: KDF
  * @create: 2019-02-17 20:05
  **/
-//@Bean
+@Controller
 public class Boy {
     public String name;
 }

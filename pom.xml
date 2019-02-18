@@ -48,5 +48,11 @@
             <artifactId>slf4j-simple</artifactId>
             <version>1.8.0-beta0</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.54</version>
+        </dependency>
     </dependencies>
 </project>

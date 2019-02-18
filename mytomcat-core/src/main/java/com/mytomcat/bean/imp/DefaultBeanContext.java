@@ -1,4 +1,4 @@
-package com.mytomcat.bean;
+package com.mytomcat.bean.imp;
 
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.lang.ClassScaner;
@@ -6,16 +6,25 @@ import cn.hutool.core.util.StrUtil;
 import com.mytomcat.annotation.Autowired;
 import com.mytomcat.annotation.Bean;
 
+import com.mytomcat.annotation.Controller;
+import com.mytomcat.annotation.Service;
+import com.mytomcat.aware.Aware;
+import com.mytomcat.aware.BeanContextAware;
+import com.mytomcat.bean.BaseBean;
+import com.mytomcat.bean.BeanContext;
+import com.mytomcat.common.CommonConstants;
+import com.mytomcat.init.InitFunc;
+import com.mytomcat.utils.StringUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 /**
  * @program: mytomcat
@@ -23,30 +32,42 @@ import java.util.Set;
  * @create: 2019-02-16 16:27
  **/
 
-public class DefaultBeanContext implements BeanContext {
+public class DefaultBeanContext extends BaseBean implements BeanContext ,InitFunc {
 
     Logger logger = LoggerFactory.getLogger(DefaultBeanContext.class);
     public static HashMap<String,Object> beanMap = new HashMap();
-    @Override
-    public Object getBean(String name) {
-        return beanMap.get(name);
-    }
+    public static List<Class<? extends Annotation>> annotationLists = Arrays.asList(Bean.class,Controller.class,Service.class);
+    /**
+     * BeanContext的实例(单例)
+     */
+    private static DefaultBeanContext context;
 
+    public static BeanContext getInstance(){
+        if(context==null) {
+            synchronized (DefaultBeanContext.class) {
+                if(context==null) {
+                    context = new DefaultBeanContext();
+                }
+            }
+        }
+        return context;
+    }
 
 
     //初始化bean
     public void initBean()  {
         logger.info("[DefaultBeanContex] begin initBean");
         try {
-            Set<Class<?>> classSets = ClassScaner.scanPackage();
-//            Set<Class<?>> classSets = ClassScaner.scanPackageByAnnotation("com", Bean.class);
+
+                Set<Class<?>> classSets = ClassScaner.scanPackageByAnnotation(CommonConstants.BEAN_SCAN_PACKAGE, Bean.class);
             if (CollectionUtil.isNotEmpty(classSets)) {
                 /*
                  * 遍历所以类,找出有bean注解的Class，并且保存到beanmap中
                  */
                 for (Class<?> cls : classSets) {
-                    if (cls.isAnnotationPresent(Bean.class)) {
-                        Bean annotation = cls.getAnnotation(Bean.class);
+
+                    if (!cls.isAnnotation() && cls.isAnnotationPresent(Bean.class)) {
+                        Bean annotation = (Bean) cls.getAnnotation(Bean.class);
 
                         String beanName = StrUtil.isNotBlank(annotation.name()) ? annotation.name() : cls.getName();
                         if (beanMap.containsKey(beanName)) {
@@ -57,10 +78,11 @@ public class DefaultBeanContext implements BeanContext {
                     }
                 }
                 int size = beanMap.size();
-                logger.info("[DefaultBeanContext] initBean success! ["+ size +"] beans have created");
-            }else {
+                logger.info("[DefaultBeanContext] initBean success! [" + size + "] beans have created");
+            } else {
                 logger.warn("[DefaultBeanContext] no bean class scanned");
             }
+
         }catch (Exception e){
             logger.error("[DefaultBeanContext] initBean find error,cause:{}",e.getMessage(),e);
         }
@@ -77,7 +99,7 @@ public class DefaultBeanContext implements BeanContext {
         for (Map.Entry<String, Object> entry : beanMap.entrySet()) {
             Object bean = entry.getValue();
             if (bean != null) {
-//                propertyAnnotation(bean);
+                propertyAnnotation(bean);
                 fieldAnnotation(bean);
             }
         }
@@ -161,6 +183,40 @@ public class DefaultBeanContext implements BeanContext {
         } catch (Exception e) {
             logger.info("[DefaultBeanContext] propertyAnnotation error,cause:{}",e.getMessage(),e);
         }
+    }
+
+    public void processBeanContextAware() {
+        Set<Class<?>> classSet = ClassScaner.scanPackageBySuper(CommonConstants.BEAN_SCAN_PACKAGE,BeanContextAware.class);
+        if (CollectionUtil.isNotEmpty(classSet)) {
+            try {
+                for (Class cls : classSet) {
+                    if (!cls.isInterface() && BeanContextAware.class.isAssignableFrom(cls)) {
+//                        Constructor<?> constructor = cls.getDeclaredConstructor();
+//                        constructor.setAccessible(true);
+                        BeanContextAware aware = (BeanContextAware)cls.newInstance();
+                        aware.setBeanContext(getInstance());
+                    }
+                }
+            }catch (Exception e){
+
+            }
+
+
+        }
+    }
+
+    @Override
+    public Object getBean(String name) {
+        return beanMap.get(name);
+    }
+
+
+    @Override
+    public void init() {
+        context=new DefaultBeanContext();
+        initBean();
+        injectAnnotation();
+        processBeanContextAware();
     }
 }
 
