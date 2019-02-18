@@ -1,6 +1,6 @@
 package com.mytomcat.Router;
 
-import com.mytomcat.common.ResponseType;
+import com.mytomcat.common.enums.ResponseType;
 import io.netty.handler.codec.http.HttpMethod;
 
 public interface RouterContext {

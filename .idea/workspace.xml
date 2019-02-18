@@ -2,32 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7181b93d-77e8-4d3f-ba2b-cffaef69823b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/Router.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/RouterContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/RouterResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/imp/DefaultRouterContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/annotation/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/aware/Aware.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/aware/BeanContextAware.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/BaseBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/CommonConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/ResponseType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/init/InitFunc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/utils/PackageScanerUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/utils/StringUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/MyContextBeanAware.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/annotation/RequestMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/enums/RequestMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/connector/NettyServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/connector/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ControllerContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ControllerProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/imp/DefaultControllerContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/DefaultRouterContextTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/DefaultBeanContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/imp/DefaultBeanContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/Router.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/Router.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/RouterContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/RouterContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/imp/DefaultRouterContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/imp/DefaultRouterContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/annotation/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/annotation/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/imp/DefaultBeanContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/imp/DefaultBeanContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/ResponseType.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/enums/ResponseType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/example/ContextExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/example/ContextExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/mytomact/Perseon1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/mytomact/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-example/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-example/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/ContextExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/ContextExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/mytomact/Boy.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/Boy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/mytomact/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/mytomact/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,111 +33,132 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mytomcat-core/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-        </entry>
-      </file>
-      <file leaf-file-name="Router.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/Router.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResponseType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/ResponseType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-              <folding>
-                <element signature="e#398#399#0" expanded="true" />
-                <element signature="e#443#444#0" expanded="true" />
-                <element signature="e#484#485#0" expanded="true" />
-                <element signature="e#518#519#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RouterContext.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/RouterContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="78" selection-start-line="6" selection-start-column="78" selection-end-line="6" selection-end-column="78" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DefaultBeanContext.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/imp/DefaultBeanContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="218" column="34" selection-start-line="218" selection-start-column="34" selection-end-line="218" selection-end-column="34" />
+            <state relative-caret-position="278">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultRouterContext.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DefaultRouterContext.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/imp/DefaultRouterContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+            <state relative-caret-position="383">
+              <caret line="101" selection-start-line="101" selection-end-line="101" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#476#477#0" expanded="true" />
-                <element signature="e#503#504#0" expanded="true" />
+                <element signature="e#1636#1637#0" expanded="true" />
+                <element signature="e#1663#1664#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InitFunc.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/init/InitFunc.java">
+      <file leaf-file-name="NettyServer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/connector/NettyServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+            <state relative-caret-position="190">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoggerFactory.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.8.0-beta0/slf4j-api-1.8.0-beta0.jar!/org/slf4j/LoggerFactory.class">
+      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/connector/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="292" column="28" selection-start-line="292" selection-start-column="28" selection-end-line="292" selection-end-column="28" />
+            <state relative-caret-position="57">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContextExample.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/example/ContextExample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="10" selection-start-line="11" selection-start-column="9" selection-end-line="12" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
-                <element signature="e#12963#12964#0" expanded="true" />
-                <element signature="e#13018#13019#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SLF4JServiceProvider.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.8.0-beta0/slf4j-api-1.8.0-beta0.jar!/org/slf4j/spi/SLF4JServiceProvider.class">
+      <file leaf-file-name="DefaultControllerContext.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/imp/DefaultControllerContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            <state relative-caret-position="174">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RouterResult.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/RouterResult.java">
+      <file leaf-file-name="ControllerContext.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ControllerContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="95">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ControllerProxy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ControllerProxy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="68" column="67" selection-start-line="68" selection-start-column="67" selection-end-line="68" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#490#491#0" expanded="true" />
+                <element signature="e#525#526#0" expanded="true" />
+                <element signature="e#587#588#0" expanded="true" />
+                <element signature="e#635#636#0" expanded="true" />
+                <element signature="e#682#683#0" expanded="true" />
+                <element signature="e#718#719#0" expanded="true" />
+                <element signature="e#783#784#0" expanded="true" />
+                <element signature="e#833#834#0" expanded="true" />
+                <element signature="e#870#871#0" expanded="true" />
+                <element signature="e#903#904#0" expanded="true" />
+                <element signature="e#955#956#0" expanded="true" />
+                <element signature="e#999#1000#0" expanded="true" />
+                <element signature="e#1032#1033#0" expanded="true" />
+                <element signature="e#1061#1062#0" expanded="true" />
+                <element signature="e#1105#1106#0" expanded="true" />
+                <element signature="e#1141#1142#0" expanded="true" />
+                <element signature="e#1178#1179#0" expanded="true" />
+                <element signature="e#1211#1212#0" expanded="true" />
+                <element signature="e#1263#1264#0" expanded="true" />
+                <element signature="e#1307#1308#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultRouterContextTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/DefaultRouterContextTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -157,8 +169,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
-        <option value="AnnotationType" />
         <option value="Enum" />
+        <option value="AnnotationType" />
         <option value="Class" />
         <option value="Interface" />
       </list>
@@ -173,18 +185,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/mytomcat/core/context/DefaultBeanContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/Contex.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/BookServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/context/BeanContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/ContextExample.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mytomac/Person.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mytomac/Student.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test/Student.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test/Person.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test/Test1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/context/DefaultBeanContext.java" />
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/Anamital.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mytomac/Car.java" />
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/context/DefaultBeanContext.java" />
@@ -212,7 +212,6 @@
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/utils/StringUtil.java" />
         <option value="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/mytomact/Boy.java" />
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/annotation/Service.java" />
-        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/annotation/Controller.java" />
         <option value="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/MyContextBeanAware.java" />
         <option value="$PROJECT_DIR$/mytomcat-example/pom.xml" />
         <option value="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/ContextExample.java" />
@@ -222,8 +221,21 @@
         <option value="$PROJECT_DIR$/mytomcat-core/pom.xml" />
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/RouterContext.java" />
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/init/InitFunc.java" />
-        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/imp/DefaultRouterContext.java" />
+        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/RequestMethod.java" />
+        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/enums/RequestMethod.java" />
+        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ControllerContext.java" />
+        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/annotation/RequestMapping.java" />
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/imp/DefaultBeanContext.java" />
+        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/annotation/Controller.java" />
+        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/imp/DefaultControllerContext.java" />
+        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/Router.java" />
+        <option value="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/UserService.java" />
+        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/example/ContextExample.java" />
+        <option value="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/DefaultRouterContextTest.java" />
+        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/imp/DefaultRouterContext.java" />
+        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ControllerProxy.java" />
+        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/connector/Server.java" />
+        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/connector/NettyServer.java" />
       </list>
     </option>
   </component>
@@ -280,7 +292,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -343,69 +355,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="imp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="context" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="init" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Router" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="Router" type="462c0819:PsiDirectoryNode" />
-              <item name="imp" type="462c0819:PsiDirectoryNode" />
+              <item name="connector" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
@@ -504,18 +454,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ContextExample.test">
-    <configuration name="ContextExample (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.ContextExample" />
-      <module name="mytomcat-core" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
+  <component name="RunManager" selected="JUnit.DefaultRouterContextTest.test1">
     <configuration name="ContextExample (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.ContextExample" />
       <module name="mytomcat-example" />
@@ -575,6 +514,29 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="DefaultRouterContextTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mytomcat-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mytomcat.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.mytomcat.example" />
+      <option name="MAIN_CLASS_NAME" value="com.mytomcat.example.DefaultRouterContextTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -614,19 +576,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.ContextExample (1)" />
       <item itemvalue="Application.ContextExample (2)" />
       <item itemvalue="Application.ContextExample (3)" />
       <item itemvalue="Application.StringUtil" />
       <item itemvalue="JUnit.ContextExample.test" />
+      <item itemvalue="JUnit.DefaultRouterContextTest.test1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DefaultRouterContextTest.test1" />
         <item itemvalue="JUnit.ContextExample.test" />
         <item itemvalue="Application.ContextExample (3)" />
         <item itemvalue="Application.StringUtil" />
         <item itemvalue="Application.ContextExample (2)" />
-        <item itemvalue="Application.ContextExample (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -641,7 +603,7 @@
       <option name="presentableId" value="Default" />
       <updated>1550221414520</updated>
       <workItem from="1550221416723" duration="23002000" />
-      <workItem from="1550382238619" duration="24226000" />
+      <workItem from="1550382238619" duration="35499000" />
     </task>
     <task id="LOCAL-00001" summary="完成bean容器的初始化">
       <created>1550327316870</created>
@@ -671,19 +633,41 @@
       <option name="project" value="LOCAL" />
       <updated>1550409912659</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="完成beanContextAware">
+      <created>1550479128992</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1550479128992</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="ContextExample_test - 2019.02.18 at 13h 45m 59s.xml">
       <configuration name="ContextExample.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="DefaultRouterContextTest_test1 - 2019.02.18 at 22h 07m 06s.xml">
+      <configuration name="DefaultRouterContextTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefaultRouterContextTest_test1 - 2019.02.18 at 22h 09m 33s.xml">
+      <configuration name="DefaultRouterContextTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefaultRouterContextTest_test1 - 2019.02.18 at 22h 11m 05s.xml">
+      <configuration name="DefaultRouterContextTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefaultRouterContextTest_test1 - 2019.02.18 at 22h 12m 54s.xml">
+      <configuration name="DefaultRouterContextTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefaultRouterContextTest_test1 - 2019.02.18 at 22h 14m 08s.xml">
+      <configuration name="DefaultRouterContextTest.test1" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47228000" />
+    <option name="totallyTimeSpent" value="58501000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -697,14 +681,14 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990025" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3990025" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32917705" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2892768" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2892768" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.4775561" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2067239" />
       <window_info anchor="bottom" id="SonarLint" order="7" />
@@ -760,7 +744,8 @@
     <MESSAGE value="完成bean容器的初始化" />
     <MESSAGE value=" 整理项目结构" />
     <MESSAGE value="完成bean的属性注入" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成bean的属性注入" />
+    <MESSAGE value="完成beanContextAware" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成beanContextAware" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -886,7 +871,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/imp/DefaultBeanContext.java</url>
-          <line>65</line>
+          <line>69</line>
           <properties />
           <option name="timeStamp" value="31" />
         </line-breakpoint>
@@ -898,37 +883,37 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/imp/DefaultBeanContext.java</url>
-          <line>188</line>
+          <line>191</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/imp/DefaultBeanContext.java</url>
-          <line>189</line>
+          <line>192</line>
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/imp/DefaultBeanContext.java</url>
-          <line>205</line>
+          <line>208</line>
           <properties />
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/imp/DefaultBeanContext.java</url>
-          <line>204</line>
+          <line>207</line>
           <properties />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/imp/DefaultBeanContext.java</url>
-          <line>193</line>
+          <line>196</line>
           <properties />
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/imp/DefaultBeanContext.java</url>
-          <line>192</line>
+          <line>195</line>
           <properties />
           <option name="timeStamp" value="39" />
         </line-breakpoint>
@@ -946,13 +931,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/imp/DefaultBeanContext.java</url>
-          <line>45</line>
+          <line>49</line>
           <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/imp/DefaultBeanContext.java</url>
-          <line>47</line>
+          <line>51</line>
           <properties />
           <option name="timeStamp" value="44" />
         </line-breakpoint>
@@ -961,6 +946,42 @@
           <line>19</line>
           <properties />
           <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/imp/DefaultRouterContext.java</url>
+          <line>97</line>
+          <properties />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/imp/DefaultRouterContext.java</url>
+          <line>118</line>
+          <properties />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/imp/DefaultRouterContext.java</url>
+          <line>125</line>
+          <properties />
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/DefaultRouterContextTest.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/imp/DefaultRouterContext.java</url>
+          <line>86</line>
+          <properties />
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/imp/DefaultRouterContext.java</url>
+          <line>95</line>
+          <properties />
+          <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/Student.java</url>
@@ -977,22 +998,10 @@
           <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="49" />
+      <option name="time" value="56" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/Person.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/Test.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/Test1.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mytomac/Person.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mytomac/Student.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ContextExample.java" />
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/Anamital.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/context/DefaultBeanContext.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mytomac/Car.java" />
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1122,33 +1131,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/annotation/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/example/ContextExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/BaseBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.3.2/hutool-all-4.3.2-sources.jar!/cn/hutool/core/lang/ClassScaner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1237,33 +1219,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/Router.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/ResponseType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding>
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/RouterResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mytomcat-core/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1271,16 +1226,6 @@
         </state>
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/RouterContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="78" selection-start-line="6" selection-start-column="78" selection-end-line="6" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.8.0-beta0/slf4j-api-1.8.0-beta0.jar!/org/slf4j/spi/SLF4JServiceProvider.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -1300,29 +1245,202 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/BaseBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/RouterContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/init/InitFunc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        <state relative-caret-position="38">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/RouterResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/enums/RequestMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding>
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/src.zip!/java/lang/annotation/Annotation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/annotation/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/enums/ResponseType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/annotation/RequestMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/Router.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ControllerContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/example/ContextExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="10" selection-start-line="11" selection-start-column="9" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/imp/DefaultControllerContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ControllerProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="68" column="67" selection-start-line="68" selection-start-column="67" selection-end-line="68" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#682#683#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#870#871#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
+            <element signature="e#955#956#0" expanded="true" />
+            <element signature="e#999#1000#0" expanded="true" />
+            <element signature="e#1032#1033#0" expanded="true" />
+            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="e#1105#1106#0" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="true" />
+            <element signature="e#1178#1179#0" expanded="true" />
+            <element signature="e#1211#1212#0" expanded="true" />
+            <element signature="e#1263#1264#0" expanded="true" />
+            <element signature="e#1307#1308#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/DefaultRouterContextTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/imp/DefaultBeanContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="218" column="34" selection-start-line="218" selection-start-column="34" selection-end-line="218" selection-end-column="34" />
+        <state relative-caret-position="278">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/imp/DefaultRouterContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        <state relative-caret-position="383">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#1636#1637#0" expanded="true" />
+            <element signature="e#1663#1664#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/connector/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/connector/NettyServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
         </state>
       </provider>
     </entry>

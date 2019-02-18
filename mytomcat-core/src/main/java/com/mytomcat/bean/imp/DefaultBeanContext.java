@@ -42,6 +42,10 @@ public class DefaultBeanContext extends BaseBean implements BeanContext ,InitFun
      */
     private static DefaultBeanContext context;
 
+    private DefaultBeanContext(){
+
+    }
+
     public static BeanContext getInstance(){
         if(context==null) {
             synchronized (DefaultBeanContext.class) {
@@ -68,7 +72,6 @@ public class DefaultBeanContext extends BaseBean implements BeanContext ,InitFun
 
                     if (!cls.isAnnotation() && cls.isAnnotationPresent(Bean.class)) {
                         Bean annotation = (Bean) cls.getAnnotation(Bean.class);
-
                         String beanName = StrUtil.isNotBlank(annotation.name()) ? annotation.name() : cls.getName();
                         if (beanMap.containsKey(beanName)) {
                             logger.warn("[DefaultBeanContext] duplicate bean with name={}", beanName);
@@ -213,10 +216,11 @@ public class DefaultBeanContext extends BaseBean implements BeanContext ,InitFun
 
     @Override
     public void init() {
-        context=new DefaultBeanContext();
-        initBean();
-        injectAnnotation();
-        processBeanContextAware();
+//        context=new DefaultBeanContext();
+//        initBean();
+//        injectAnnotation();
+//        processBeanContextAware();
+        System.out.println("Default");
     }
 }
 

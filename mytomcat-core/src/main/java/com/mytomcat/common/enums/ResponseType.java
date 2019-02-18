@@ -1,4 +1,4 @@
-package com.mytomcat.common;
+package com.mytomcat.common.enums;
 
 public enum ResponseType {
     /**

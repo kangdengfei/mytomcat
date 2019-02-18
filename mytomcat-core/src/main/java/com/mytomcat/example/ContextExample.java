@@ -9,8 +9,8 @@ import com.mytomcat.bean.imp.DefaultBeanContext;
  **/
 public class ContextExample {
     public static void main(String[] args) {
-        DefaultBeanContext defaultBeanContext = new DefaultBeanContext();
-        defaultBeanContext.initBean();
+//        DefaultBeanContext defaultBeanContext = new DefaultBeanContext();
+//        defaultBeanContext.initBean();
 
     }
 }
