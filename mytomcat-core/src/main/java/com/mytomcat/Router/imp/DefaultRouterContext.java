@@ -22,7 +22,6 @@ import io.netty.handler.codec.http.HttpMethod;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 import java.util.Set;
 
@@ -85,7 +84,7 @@ public class DefaultRouterContext implements RouterContext ,InitFunc {
     public void init() {
         System.out.println("DefaultRouterContext init");
         beanContext = DefaultBeanContext.getInstance();
-        controllerContext = new DefaultControllerContext();
+        controllerContext =  DefaultControllerContext.gerInstance();
         initRouter();
 
     }

@@ -14,7 +14,7 @@ public enum ResponseType {
     /**
      * TEXT
      */
-    TEXT("tet/plain;charset=UTF-8"),
+    TEXT("text/plain;charset=UTF-8"),
 
     /**
      * HTML
