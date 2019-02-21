@@ -50,14 +50,14 @@ public class DefaultControllerContext implements ControllerContext {
 
     @Override
     public void addProxy(String path, ControllerProxy controllerProxy) {
-        //todo
+        proxyMap.putIfAbsent(path, controllerProxy);
 
     }
 
     @Override
     public ControllerProxy getProxy(HttpMethod httpMethod, String uri) {
         //todo
-        return null;
+        return proxyMap.get(uri);
     }
 }
 

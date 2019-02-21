@@ -1,6 +1,9 @@
 package com.mytomcat.http;
 
+import com.mytomcat.common.enums.HtmlMakerEnum;
 import com.mytomcat.common.enums.ResponseType;
+import com.mytomcat.common.html.HtmlMaker;
+import com.mytomcat.common.html.imp.DefaultHtmlMaker;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.handler.codec.http.*;
@@ -20,7 +23,7 @@ public class HttpRenderUtil {
      * @param responseType 数据类型
      * @return
      */
-    public static FullHttpResponse Render(Object object , ResponseType responseType){
+    public static FullHttpResponse render(Object object , ResponseType responseType){
         byte[] bytes = HttpRenderUtil.getBytes(object);
         ByteBuf byteBuf = Unpooled.wrappedBuffer(bytes);
         FullHttpResponse response = new DefaultFullHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK, byteBuf);
@@ -28,6 +31,19 @@ public class HttpRenderUtil {
         response.headers().add(HttpHeaderNames.CONTENT_TYPE, type.getContentType());
         response.headers().add(HttpHeaderNames.CONTENT_LENGTH, String.valueOf(byteBuf.readableBytes()));
         return response;
+    }
+
+
+
+    /**
+     * 404 NotFoundResponse
+     * @return 响应对象
+     */
+    public static FullHttpResponse getNotFoundResponse(){
+        HtmlMaker htmlMaker = HtmlMakerFactory.instance().build(HtmlMakerEnum.STRING,DefaultHtmlMaker.class);
+        String htmlTpl = Page404.HTML;
+        String content = HtmlContentUtil.getPageContent(htmlMaker,htmlTpl,null);
+        return render(content, ResponseType.HTML);
     }
 
     /**

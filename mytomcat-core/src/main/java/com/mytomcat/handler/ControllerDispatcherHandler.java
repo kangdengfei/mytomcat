@@ -36,11 +36,23 @@ public class ControllerDispatcherHandler extends SimpleChannelInboundHandler<Htt
 
 
 
+
         } finally {
 
             ReferenceCountUtil.release(msg);
         }
     }
+
+    private HttpResponse invokeResponse(HttpRequest httpRequest){
+        ControllerProxy proxy = controllerContext.getProxy(httpRequest.method(), httpRequest.uri());
+        if(proxy == null){
+            return null
+        }else {
+
+        }
+
+    }
+
 
 
     private void stageRequest(HttpRequest request, ChannelHandlerContext ctx){
