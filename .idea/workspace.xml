@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7181b93d-77e8-4d3f-ba2b-cffaef69823b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/enums/HtmlMakerEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/html/HtmlMaker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/html/HtmlMakerFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/html/imp/DefaultHtmlMaker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/view/HtmlKeyHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/view/Page404.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/view/Page500.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/view/PageError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/view/PageIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/imp/DefaultControllerContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/imp/DefaultControllerContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/example/ContextExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/handler/ControllerDispatcherHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/handler/ControllerDispatcherHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/http/HttpRenderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/http/HttpRenderUtil.java" afterDir="false" />
-    </list>
+    <list default="true" id="7181b93d-77e8-4d3f-ba2b-cffaef69823b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/mytomcat-example/target/" />
@@ -46,8 +30,8 @@
       <file leaf-file-name="HtmlMakerFactory.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/html/HtmlMakerFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="586">
-              <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+            <state relative-caret-position="358">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#454#455#0" expanded="true" />
@@ -228,9 +212,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="841" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -641,7 +624,7 @@
       <workItem from="1550221416723" duration="23002000" />
       <workItem from="1550382238619" duration="56366000" />
       <workItem from="1550746959977" duration="29000" />
-      <workItem from="1550753501571" duration="3041000" />
+      <workItem from="1550753501571" duration="3492000" />
     </task>
     <task id="LOCAL-00001" summary="完成bean容器的初始化">
       <created>1550327316870</created>
@@ -692,7 +675,14 @@
       <option name="project" value="LOCAL" />
       <updated>1550678361111</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="开发分发路由功能">
+      <created>1550759369245</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1550759369245</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -716,7 +706,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82438000" />
+    <option name="totallyTimeSpent" value="82889000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -1440,8 +1430,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/html/HtmlMakerFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+        <state relative-caret-position="358">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#454#455#0" expanded="true" />
