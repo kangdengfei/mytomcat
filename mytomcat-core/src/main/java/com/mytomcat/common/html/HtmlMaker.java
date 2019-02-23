@@ -1,8 +1,8 @@
 package com.mytomcat.common.html;
 
-import java.util.HashMap;
+import java.util.Map;
 
 public interface HtmlMaker {
 
-    String make(String htmlTemplate,HashMap<String,Object> conentMap);
+    String make(String htmlTemplate,Map<String,Object> conentMap);
 }

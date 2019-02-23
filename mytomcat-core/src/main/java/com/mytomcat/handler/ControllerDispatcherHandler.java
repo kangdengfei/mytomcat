@@ -4,11 +4,11 @@ import com.mytomcat.context.DefaultHttpContext;
 import com.mytomcat.controller.ControllerContext;
 import com.mytomcat.controller.ControllerProxy;
 import com.mytomcat.controller.imp.DefaultControllerContext;
+import com.mytomcat.http.HttpRenderUtil;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
-import io.netty.handler.codec.http.HttpRequest;
-import io.netty.handler.codec.http.HttpResponse;
+import io.netty.handler.codec.http.*;
 import io.netty.util.ReferenceCountUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,25 +30,28 @@ public class ControllerDispatcherHandler extends SimpleChannelInboundHandler<Htt
      */
     @Override
     public void channelRead0(ChannelHandlerContext ctx, HttpRequest msg)  {
-        HttpResponse response = null;
+        FullHttpResponse response = null;
         try {
+            response = invokeResponse(msg);
+            writeResponse(response,ctx);
             //处理业务，找到对应的controllerProxy
-
-
-
-
-        } finally {
-
+        } catch (Exception e){
+            logger.error("[ControllerDispatcherHandler] find error,cause by {}",e.getMessage(),e);
+        }
+        finally {
+            ctx.flush();
             ReferenceCountUtil.release(msg);
         }
     }
 
-    private HttpResponse invokeResponse(HttpRequest httpRequest){
+    private FullHttpResponse invokeResponse(HttpRequest httpRequest){
+        FullHttpResponse httpResponse = null;
         ControllerProxy proxy = controllerContext.getProxy(httpRequest.method(), httpRequest.uri());
         if(proxy == null){
-            return null
+           httpResponse = HttpRenderUtil.getNotFoundResponse();
+            return httpResponse;
         }else {
-
+            return null;
         }
 
     }
@@ -65,6 +68,14 @@ public class ControllerDispatcherHandler extends SimpleChannelInboundHandler<Htt
         ctx.close();
     }
 
+    public void writeResponse(FullHttpResponse response,ChannelHandlerContext ctx){
+        HttpHeaders heads = response.headers();
+//        heads.add(HttpHeaderNames.CONTENT_TYPE, HttpHeaderValues.TEXT_PLAIN + "; charset=UTF-8");
+        heads.add(HttpHeaderNames.CONTENT_LENGTH, response.content().readableBytes()); // 3
+        heads.add(HttpHeaderNames.CONNECTION, HttpHeaderValues.KEEP_ALIVE);
+        ctx.write(response);
+
+    }
 
 }
 

@@ -1,6 +1,6 @@
 package com.mytomcat.connector;
 
 public interface Server {
-    void preStaet();
+    void preStart();
     void start();
 }

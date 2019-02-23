@@ -58,6 +58,20 @@ public class DefaultBeanContext extends BaseBean implements BeanContext ,InitFun
     }
 
 
+    @Override
+    public void init() {
+        doInit();
+    }
+
+    public void doInit(){
+        if(context == null){
+            context = new DefaultBeanContext();
+        }
+        initBean();//初始化bean；
+        injectAnnotation();//对象注入
+        processBeanContextAware();//注入beanContext到BeanContext;
+    }
+
     //初始化bean
     public void initBean()  {
         logger.info("[DefaultBeanContex] begin initBean");
@@ -213,16 +227,6 @@ public class DefaultBeanContext extends BaseBean implements BeanContext ,InitFun
         return beanMap.get(name);
     }
 
-
-    @Override
-    public void init() {
-//        context=new DefaultBeanContext();
-//        initBean();
-//        injectAnnotation();
-//        processBeanContextAware();
-        System.out.println("Default");
-    }
 }
-
 
 

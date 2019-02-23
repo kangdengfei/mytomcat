@@ -82,10 +82,15 @@ public class DefaultRouterContext implements RouterContext ,InitFunc {
 
     @Override
     public void init() {
-        System.out.println("DefaultRouterContext init");
-        beanContext = DefaultBeanContext.getInstance();
-        controllerContext =  DefaultControllerContext.gerInstance();
-        initRouter();
+        doInit();
+    }
+
+    public void doInit(){
+        synchronized (DefaultRouterContext.class){
+            beanContext = DefaultBeanContext.getInstance();
+            controllerContext = DefaultControllerContext.gerInstance();
+            initRouter();
+        }
 
     }
 

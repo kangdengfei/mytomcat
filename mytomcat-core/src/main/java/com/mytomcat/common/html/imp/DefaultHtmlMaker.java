@@ -14,7 +14,7 @@ import java.util.Map;
  **/
 public class DefaultHtmlMaker implements HtmlMaker {
     @Override
-    public String make(String htmlTemplate, HashMap<String, Object> contentMap) {
+    public String make(String htmlTemplate, Map<String, Object> contentMap) {
         String html = htmlTemplate;
         if(CollectionUtil.isNotEmpty(contentMap)){
             for(Map.Entry<String,Object> entry : contentMap.entrySet()){
@@ -27,6 +27,7 @@ public class DefaultHtmlMaker implements HtmlMaker {
         }
         return html;
     }
+
 }
 
 

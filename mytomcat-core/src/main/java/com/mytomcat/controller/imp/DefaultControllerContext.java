@@ -1,6 +1,7 @@
 package com.mytomcat.controller.imp;
 
 import com.mytomcat.Router.RouterContext;
+import com.mytomcat.Router.imp.DefaultRouterContext;
 import com.mytomcat.controller.ControllerContext;
 import com.mytomcat.controller.ControllerProxy;
 import io.netty.handler.codec.http.HttpMethod;
@@ -8,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @program: mytomcat
@@ -33,6 +35,8 @@ public class DefaultControllerContext implements ControllerContext {
     private volatile static DefaultControllerContext context;
 
     private DefaultControllerContext(){
+        routerContext = DefaultRouterContext.getInstance();
+        proxyMap = new ConcurrentHashMap<>();
 
     }
 
@@ -57,7 +61,10 @@ public class DefaultControllerContext implements ControllerContext {
     @Override
     public ControllerProxy getProxy(HttpMethod httpMethod, String uri) {
         //todo
-        return proxyMap.get(uri);
+        if (proxyMap.containsKey(uri)){
+            return proxyMap.get(uri);
+        }else
+            return null;
     }
 }
 

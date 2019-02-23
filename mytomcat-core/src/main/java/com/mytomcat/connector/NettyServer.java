@@ -1,5 +1,8 @@
 package com.mytomcat.connector;
 
+import com.mytomcat.Router.RouterContext;
+import com.mytomcat.Router.imp.DefaultRouterContext;
+import com.mytomcat.bean.imp.DefaultBeanContext;
 import com.mytomcat.common.CommonConstants;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -20,13 +23,18 @@ public class NettyServer implements Server {
     private static Logger logger = LoggerFactory.getLogger(NettyServer.class);
 
     @Override
-    public void preStaet() {
-        System.out.println();
+    public void preStart() {
+        DefaultBeanContext defaultBeanContext = (DefaultBeanContext)DefaultBeanContext.getInstance();
+        DefaultRouterContext routerContext =(DefaultRouterContext) DefaultRouterContext.getInstance();
+        defaultBeanContext.init();
+        routerContext.init();
+
 
     }
 
     @Override
     public void start()  {
+        preStart();
         EventLoopGroup bossGroup = new NioEventLoopGroup();
         EventLoopGroup workerGroup = new NioEventLoopGroup();
         try {
