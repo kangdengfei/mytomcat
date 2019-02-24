@@ -6,6 +6,7 @@ import com.mytomcat.common.html.HtmlMaker;
 import com.mytomcat.common.html.HtmlMakerFactory;
 import com.mytomcat.common.html.imp.DefaultHtmlMaker;
 import com.mytomcat.common.view.Page404;
+import com.mytomcat.common.view.PageIndex;
 import com.mytomcat.utils.HtmlContentUtil;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -26,7 +27,7 @@ public class HttpRenderUtil {
      * @param responseType 数据类型
      * @return
      */
-    public static FullHttpResponse render(Object object , ResponseType responseType){
+    public static FullHttpResponse buildResponse(Object object , ResponseType responseType){
         byte[] bytes = HttpRenderUtil.getBytes(object);
         ByteBuf byteBuf = Unpooled.wrappedBuffer(bytes);
         FullHttpResponse response = new DefaultFullHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK, byteBuf);
@@ -46,7 +47,14 @@ public class HttpRenderUtil {
         HtmlMaker htmlMaker = HtmlMakerFactory.instance().build(HtmlMakerEnum.STRING,DefaultHtmlMaker.class);
         String htmlTpl = Page404.HTML;
         String content = HtmlContentUtil.getPageContent(htmlMaker,htmlTpl,null);
-        return render(content, ResponseType.HTML);
+        return buildResponse(content, ResponseType.HTML);
+    }
+
+    public static FullHttpResponse getDefaultResponse(){
+        HtmlMaker htmlMaker = HtmlMakerFactory.instance().build(HtmlMakerEnum.STRING,DefaultHtmlMaker.class);
+        String htmlTpl = PageIndex.HTML;
+        String content = HtmlContentUtil.getPageContent(htmlMaker, htmlTpl, null);
+        return buildResponse(content,ResponseType.HTML);
     }
 
     /**

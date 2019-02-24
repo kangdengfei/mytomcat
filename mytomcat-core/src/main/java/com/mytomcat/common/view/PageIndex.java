@@ -20,7 +20,7 @@ public final class PageIndex {
           .append("<html lang=\"en\">").append(StrUtil.CRLF)
           .append("<head>").append(StrUtil.CRLF)
           .append(StrUtil.TAB).append("<meta charset=\"UTF-8\">").append(StrUtil.CRLF)
-          .append(StrUtil.TAB).append("<title>redant</title>").append(StrUtil.CRLF)
+          .append(StrUtil.TAB).append("<title>mytomcat</title>").append(StrUtil.CRLF)
           .append("</head>").append(StrUtil.CRLF)
           .append("<body>").append(StrUtil.CRLF)
           .append(StrUtil.TAB).append("<div>").append(StrUtil.CRLF)

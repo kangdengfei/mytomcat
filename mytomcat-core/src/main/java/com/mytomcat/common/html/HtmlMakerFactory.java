@@ -47,12 +47,14 @@ public class HtmlMakerFactory {
             HtmlMaker htmlMaker = htmlMakerMap.get(type);
             try {
                 if (htmlMaker == null) {
-                    if (!htmlMakerMap.containsKey(type)) {
-                        htmlMaker = (HtmlMaker) ReflectUtil.newInstance(cls);
-                        htmlMakerMap.putIfAbsent(type,htmlMaker);
-                    }else {
-                        htmlMaker = htmlMakerMap.get(type);
-                    }
+                    htmlMaker = (HtmlMaker) ReflectUtil.newInstance(cls);
+                    htmlMakerMap.putIfAbsent(type,htmlMaker);
+//                    if (!htmlMakerMap.containsKey(type)) {
+//                        htmlMaker = (HtmlMaker) ReflectUtil.newInstance(cls);
+//                        htmlMakerMap.putIfAbsent(type,htmlMaker);
+//                    }else {
+//                        htmlMaker = htmlMakerMap.get(type);
+//                    }
                 }
             }catch (Exception e){
                 logger.error("[HtmlMakeFactory] buid htmalmaker find error,casuse by {}",e.getMessage(),e);

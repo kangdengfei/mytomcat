@@ -11,6 +11,10 @@ import java.util.HashMap;
  **/
 public class Router<T> {
 
+//    public Router(String uri){
+//        addRoute("/",null,null);
+//    }
+
 
     public void addRoute (String path, HttpMethod httpMethod, T target){
         //todo

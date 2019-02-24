@@ -37,6 +37,7 @@ public class DefaultControllerContext implements ControllerContext {
     private DefaultControllerContext(){
         routerContext = DefaultRouterContext.getInstance();
         proxyMap = new ConcurrentHashMap<>();
+//        proxyMap.putIfAbsent(new ControllerProxy())
 
     }
 

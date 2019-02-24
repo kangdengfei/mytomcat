@@ -97,8 +97,9 @@ public class DefaultRouterContext implements RouterContext ,InitFunc {
     }
 
     public void initRouter(){
-        logger.info("[defaultRouterContext] initRouter");
+        logger.info("[DefaultRouterContext] initRouter");
         router = new Router<>();
+
         Set<Class<?>> classSet = ClassScaner.scanPackageByAnnotation(CommonConstants.BEAN_SCAN_PACKAGE, Controller.class);
         if (CollectionUtil.isNotEmpty(classSet)){
             for (Class cls : classSet){
@@ -118,6 +119,7 @@ public class DefaultRouterContext implements RouterContext ,InitFunc {
 
             }
         }
+        logger.info("[DefaultRouterContext] init routerContext success");
     }
 
 

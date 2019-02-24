@@ -1,5 +1,6 @@
 package com.mytomcat.handler;
 
+import cn.hutool.core.util.StrUtil;
 import com.mytomcat.context.DefaultHttpContext;
 import com.mytomcat.controller.ControllerContext;
 import com.mytomcat.controller.ControllerProxy;
@@ -24,14 +25,14 @@ public class ControllerDispatcherHandler extends SimpleChannelInboundHandler<Htt
     /**
      * 从客户度收到新
      * @param ctx
-     * @param msg
+     * @param request
      * @throws Exception
      */
     @Override
-    public void channelRead0(ChannelHandlerContext ctx, HttpRequest msg)  {
+    public void channelRead0(ChannelHandlerContext ctx, HttpRequest request)  {
         FullHttpResponse response = null;
         try {
-            response = invokeResponse(msg);
+            response = invokeResponse(request);
             writeResponse(response,ctx);
             //处理业务，找到对应的controllerProxy
         } catch (Exception e){
@@ -39,20 +40,24 @@ public class ControllerDispatcherHandler extends SimpleChannelInboundHandler<Htt
         }
         finally {
             ctx.flush();
-            ReferenceCountUtil.release(msg);
+            ReferenceCountUtil.release(request);
         }
     }
 
-    private FullHttpResponse invokeResponse(HttpRequest httpRequest){
+    private FullHttpResponse invokeResponse(HttpRequest httpRequest) {
         FullHttpResponse httpResponse = null;
-        ControllerProxy proxy = controllerContext.getProxy(httpRequest.method(), httpRequest.uri());
-        if(proxy == null){
-           httpResponse = HttpRenderUtil.getNotFoundResponse();
-            return httpResponse;
-        }else {
-            return null;
-        }
+        //todo 再加个判断
+        if (httpRequest.uri().equals("/") ) {
+            return HttpRenderUtil.getDefaultResponse();
+        } else {
+            ControllerProxy proxy = controllerContext.getProxy(httpRequest.method(), httpRequest.uri());
+            if (proxy == null) {
+                httpResponse = HttpRenderUtil.getNotFoundResponse();
+                return httpResponse;
+            } else
+                return null;
 
+        }
     }
 
 
