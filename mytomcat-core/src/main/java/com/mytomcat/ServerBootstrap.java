@@ -10,6 +10,7 @@ import com.mytomcat.connector.NettyServer;
 public class ServerBootstrap {
     public static void main(String[] args) {
         NettyServer nettyServer = new NettyServer();
+        nettyServer.preStart();
         nettyServer.start();
 
     }

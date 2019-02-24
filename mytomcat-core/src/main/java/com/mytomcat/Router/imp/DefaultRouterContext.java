@@ -8,6 +8,7 @@ import com.mytomcat.Router.RouterContext;
 import com.mytomcat.Router.RouterResult;
 import com.mytomcat.annotation.Bean;
 import com.mytomcat.annotation.Controller;
+import com.mytomcat.annotation.Order;
 import com.mytomcat.annotation.RequestMapping;
 import com.mytomcat.bean.BeanContext;
 import com.mytomcat.bean.imp.DefaultBeanContext;
@@ -31,6 +32,7 @@ import java.util.Set;
  * @author: KDF
  * @create: 2019-02-18 15:22
  **/
+@Order(value = 2)
 public class DefaultRouterContext implements RouterContext ,InitFunc {
     private static final Logger logger =  LoggerFactory.getLogger(DefaultRouterContext.class);
 

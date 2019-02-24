@@ -5,7 +5,6 @@ import com.mytomcat.controller.ControllerContext;
 import com.mytomcat.controller.ControllerProxy;
 import com.mytomcat.controller.imp.DefaultControllerContext;
 import com.mytomcat.http.HttpRenderUtil;
-import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.http.*;

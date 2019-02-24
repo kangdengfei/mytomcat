@@ -4,6 +4,7 @@ import com.mytomcat.Router.RouterContext;
 import com.mytomcat.Router.imp.DefaultRouterContext;
 import com.mytomcat.bean.imp.DefaultBeanContext;
 import com.mytomcat.common.CommonConstants;
+import com.mytomcat.init.InitExecutor;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelOption;
@@ -24,17 +25,15 @@ public class NettyServer implements Server {
 
     @Override
     public void preStart() {
-        DefaultBeanContext defaultBeanContext = (DefaultBeanContext)DefaultBeanContext.getInstance();
-        DefaultRouterContext routerContext =(DefaultRouterContext) DefaultRouterContext.getInstance();
-        defaultBeanContext.init();
-        routerContext.init();
-
-
+//        DefaultBeanContext defaultBeanContext = (DefaultBeanContext)DefaultBeanContext.getInstance();
+//        DefaultRouterContext routerContext =(DefaultRouterContext) DefaultRouterContext.getInstance();
+//        defaultBeanContext.init();
+//        routerContext.init();
+        InitExecutor.init();
     }
 
     @Override
     public void start()  {
-        preStart();
         EventLoopGroup bossGroup = new NioEventLoopGroup();
         EventLoopGroup workerGroup = new NioEventLoopGroup();
         try {

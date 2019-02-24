@@ -3,11 +3,8 @@ package com.mytomcat.bean.imp;
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.lang.ClassScaner;
 import cn.hutool.core.util.StrUtil;
-import com.mytomcat.annotation.Autowired;
-import com.mytomcat.annotation.Bean;
+import com.mytomcat.annotation.*;
 
-import com.mytomcat.annotation.Controller;
-import com.mytomcat.annotation.Service;
 import com.mytomcat.aware.Aware;
 import com.mytomcat.aware.BeanContextAware;
 import com.mytomcat.bean.BaseBean;
@@ -31,7 +28,7 @@ import java.util.*;
  * @author: KDF
  * @create: 2019-02-16 16:27
  **/
-
+@Order(value = 1)
 public class DefaultBeanContext extends BaseBean implements BeanContext ,InitFunc {
 
     Logger logger = LoggerFactory.getLogger(DefaultBeanContext.class);
