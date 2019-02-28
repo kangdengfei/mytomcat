@@ -2,7 +2,9 @@ package com.mytomcat.pojo;
 
 import org.junit.Test;
 
+import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
+import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,6 +14,17 @@ import java.util.Map;
  * @create: 2019-02-23 16:51
  **/
 public class TestDemo {
+
+    @Test
+    public void test() throws Exception {
+        Class<?> cls = Class.forName("com.mytomcat.pojo.Person");
+        Method doWork = cls.getMethod("doWork",  new Class[]{int.class,String.class});
+        Type[] genericExceptionTypes = doWork.getParameterTypes();
+        System.out.println(genericExceptionTypes.length);
+        Annotation[][] parameterAnnotations = doWork.getParameterAnnotations();
+        System.out.println(parameterAnnotations.length);
+        System.out.println();
+    }
 
     @Test
     public void test2() throws Exception {
