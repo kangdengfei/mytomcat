@@ -1,6 +1,5 @@
 package com.mytomcat.controller;
 
-import com.mytomcat.annotation.Controller;
 import io.netty.handler.codec.http.HttpMethod;
 
 public interface ControllerContext {

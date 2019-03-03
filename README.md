@@ -12,4 +12,21 @@
 **代开发**
 + [ ] session管理
 + [ ] cookie管理
++ [ ] qin zh
 
+
+####快速启动
+项目启动值需要运行`ServerBootstrap`这个类，默认实现的是`NettyServer`这个类,如下所示：
+```
+public class ServerBootstrap {
+    public static void main(String[] args) {
+        NettyServer nettyServer = new NettyServer();
+        nettyServer.preStart();//初始化context
+        nettyServer.start()；//启动服务器
+    }
+}
+```
+启动成功后，浏览器输入 http://127.0.0.1:8888，可以看到初始页面如下：
+![Alt text](./default-index.png)
+
+#### IOC容器

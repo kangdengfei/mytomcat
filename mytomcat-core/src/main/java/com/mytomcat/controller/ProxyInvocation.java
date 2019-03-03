@@ -1,12 +1,14 @@
 package com.mytomcat.controller;
 
+import com.mytomcat.annotation.Param;
 import com.mytomcat.threadlocal.MyThreadLocal;
 import com.mytomcat.utils.HttpRequestUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.awt.image.renderable.;
+import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
+import java.lang.reflect.Parameter;
 import java.util.List;
 import java.util.Map;
 
@@ -39,18 +41,38 @@ public class ProxyInvocation {
             Object [] parames = null;
             Object result;
             try {
-                parames = HttpRequestUtil.getParameeterMap();
+//                parames = HttpRequestUtil.getParameeterMap(MyThreadLocal.getInstance().getHttpRequest());
                 method.invoke(controller,parames);
             }catch (Exception e){
                 logger.error(e.getMessage());
             }
-
-
+            return null;
         }
 
         public Object [] getParameters(Method method,Class<?>[] parameterTypes){
+            //获取参数
             Map<String, List<String>> parameeterMap = HttpRequestUtil.getParameeterMap(MyThreadLocal.getInstance().getHttpRequest());
-            method.
+            //构建用于存放数据的数组
+            Object [] params = new Object[parameterTypes.length];
+            Parameter[] parameters = method.getParameters();
+            Annotation[][] parameterAnnotations = method.getParameterAnnotations();
+
+            //构造需要的参数列表
+            for (int i = 0;i<parameterTypes.length;i++){
+                Object param;
+                Class<?> type = parameterTypes[i];
+                Parameter parameter = parameters[i];
+                if (parameter.isAnnotationPresent(Param.class)){
+                    Param annotation = parameter.getAnnotation(Param.class);
+                }else {
+                    //没有注解
+                }
+
+
+
+            }
+
+            return null;
         }
     }
 

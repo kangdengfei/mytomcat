@@ -1,6 +1,8 @@
 package com.mytomcat.pojo;
 
+import com.mytomcat.annotation.Autowired;
 import com.mytomcat.annotation.Bean;
+import com.mytomcat.annotation.Param;
 
 /**
  * @program: mytomcat
@@ -23,7 +25,7 @@ public class Person {
         return "大家好";
     }
 
-    public void doWork(int day,String string){
+    public void doWork(@Param @Autowired  int day, String string){
         System.out.println("this is " +day+" "+string);
     }
 
