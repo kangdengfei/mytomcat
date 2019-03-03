@@ -27,6 +27,6 @@ public class ServerBootstrap {
 }
 ```
 启动成功后，浏览器输入 http://127.0.0.1:8888，可以看到初始页面如下：
-![Alt text](./default-index.png)
+![Alt text](./md/picture/default-index.png)
 
 #### IOC容器
