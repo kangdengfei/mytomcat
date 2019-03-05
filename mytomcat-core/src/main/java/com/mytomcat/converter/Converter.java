@@ -6,7 +6,7 @@ package com.mytomcat.converter;
  * @create: 2019-03-05 16:27
  **/
 public interface Converter {
-    Object conver(Object source,Class<?> toType,Object... patams);
+    Object convert(Object source,Class<?> toType,Object... patams);
 
 }
 

@@ -1,6 +1,7 @@
 package com.mytomcat.controller;
 
 import com.mytomcat.annotation.Param;
+import com.mytomcat.converter.PrimitiveConverter;
 import com.mytomcat.converter.PrimitiveTypeUtil;
 import com.mytomcat.threadlocal.MyThreadLocal;
 import com.mytomcat.utils.HttpRequestUtil;
@@ -37,13 +38,12 @@ public class ProxyInvocation {
             if (method == null){
                 throw  new RuntimeException();
             }
-
             Class<?> cls = controller.getClass();
             Class<?>[] parameterTypes = method.getParameterTypes();
             Object [] parames = null;
             Object result;
             try {
-//                parames = HttpRequestUtil.getParameeterMap(MyThreadLocal.getInstance().getHttpRequest());
+                parames = getParameters(method, parameterTypes);
                 method.invoke(controller,parames);
             }catch (Exception e){
                 logger.error(e.getMessage());
@@ -67,21 +67,18 @@ public class ProxyInvocation {
                 if (parameter.isAnnotationPresent(Param.class)){
                     Param annotation = parameter.getAnnotation(Param.class);
                     //生成当前的调用参数
+                    Object val = parseParameter(parameeterMap, type, annotation, null, 0);
 
-
+                    params[i] = val;
                 }else {
                     //没有注解
                 }
-
-
-
             }
-
-            return null;
+            return params;
         }
 
         private Object parseParameter(Map<String, List<String>> paramMap,Class<?> type,Param param,Method method,int index){
-            Object val;
+            Object val = null;
             String key = param.key();
             if (key != null && key.length()>0){
 
@@ -90,14 +87,15 @@ public class ProxyInvocation {
              }else {
                  List<String> list = paramMap.get(key);
                  if (list!= null){
+                     // 基础类型
                      if(PrimitiveTypeUtil.isPriType(type)){
-
+                         val = PrimitiveConverter.getInstance().convert(list.get(0), type);
                      }
-
                  }
 
              }
             }
+            return val;
         }
     }
 

@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7181b93d-77e8-4d3f-ba2b-cffaef69823b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/AbstractConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/Converter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/PrimitiveConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/PrimitiveTypeUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/BeanContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/BeanContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/imp/DefaultBeanContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/imp/DefaultBeanContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ProxyInvocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ProxyInvocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/AbstractConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/AbstractConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/Converter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/PrimitiveConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/PrimitiveConverter.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,8 +24,20 @@
       <file leaf-file-name="ProxyInvocation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ProxyInvocation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="371">
+              <caret line="74" column="17" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpRequestUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/utils/HttpRequestUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,8 +48,13 @@
       <file leaf-file-name="PrimitiveConverter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/PrimitiveConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+            <state relative-caret-position="251">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#7044#7045#0" expanded="true" />
+                <element signature="e#7062#7063#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,16 +63,16 @@
         <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/Converter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="8" column="66" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
+              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractConverter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AbstractConverter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/AbstractConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+            <state relative-caret-position="717">
+              <caret line="64" column="30" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/PrimitiveTypeUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="251">
-              <caret line="103" column="33" selection-start-line="103" selection-start-column="33" selection-end-line="103" selection-end-column="33" />
+              <caret line="103" column="26" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2636#2637#0" expanded="true" />
@@ -93,15 +106,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BeanContext.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/BeanContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="1" selection-start-line="2" selection-end-line="18" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor" />
@@ -117,11 +121,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultControllerContext.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DefaultControllerContext.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/imp/DefaultControllerContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="739">
-              <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+            <state relative-caret-position="378">
+              <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -154,7 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/RouterContext.java" />
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/init/InitFunc.java" />
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/RequestMethod.java" />
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/enums/RequestMethod.java" />
@@ -202,9 +205,10 @@
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/BeanContext.java" />
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/imp/DefaultBeanContext.java" />
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/PrimitiveTypeUtil.java" />
-        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ProxyInvocation.java" />
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/Converter.java" />
+        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/PrimitiveConverter.java" />
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/AbstractConverter.java" />
+        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ProxyInvocation.java" />
       </list>
     </option>
   </component>
@@ -310,37 +314,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="imp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="converter" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -364,21 +337,21 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.mytomcat.common.view" />
-      <recent name="com.example" />
-      <recent name="test" />
-      <recent name="com.mytomac" />
-      <recent name="reflect" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/mytomcat-core/md/picture" />
       <recent name="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/view" />
       <recent name="$PROJECT_DIR$/mytomcat-core/src/main/java" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mytomcat.converter" />
+      <recent name="com.mytomcat.common.view" />
+      <recent name="com.example" />
+      <recent name="test" />
+      <recent name="com.mytomac" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -575,7 +548,7 @@
       <workItem from="1551270814551" duration="3919000" />
       <workItem from="1551332668369" duration="18811000" />
       <workItem from="1551589272106" duration="1378000" />
-      <workItem from="1551771132474" duration="4461000" />
+      <workItem from="1551771132474" duration="7726000" />
     </task>
     <task id="LOCAL-00001" summary="完成bean容器的初始化">
       <created>1550327316870</created>
@@ -696,7 +669,14 @@
       <option name="project" value="LOCAL" />
       <updated>1551589448681</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="数据类型转换">
+      <created>1551776201708</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1551776201708</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -732,7 +712,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135872000" />
+    <option name="totallyTimeSpent" value="139137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -820,7 +800,8 @@
     <MESSAGE value="添加默认请求" />
     <MESSAGE value="修改md文件" />
     <MESSAGE value="使用threadloal保存全局变量" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用threadloal保存全局变量" />
+    <MESSAGE value="数据类型转换" />
+    <option name="LAST_COMMIT_MESSAGE" value="数据类型转换" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1310,6 +1291,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="779">
           <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1417,13 +1401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/utils/HttpRequestUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/src.zip!/java/lang/annotation/ElementType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1456,6 +1433,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
           <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1541,12 +1521,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/imp/DefaultControllerContext.java">
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/AbstractConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
-          <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+        <state relative-caret-position="717">
+          <caret line="64" column="30" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/Converter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/PrimitiveConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7044#7045#0" expanded="true" />
+            <element signature="e#7062#7063#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1554,7 +1553,7 @@
     <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/PrimitiveTypeUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
-          <caret line="103" column="33" selection-start-line="103" selection-start-column="33" selection-end-line="103" selection-end-column="33" />
+          <caret line="103" column="26" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2636#2637#0" expanded="true" />
@@ -1563,34 +1562,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ProxyInvocation.java">
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/utils/HttpRequestUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+        <state relative-caret-position="173">
+          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/PrimitiveConverter.java">
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ProxyInvocation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        <state relative-caret-position="371">
+          <caret line="74" column="17" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/Converter.java">
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/imp/DefaultControllerContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="66" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/AbstractConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+        <state relative-caret-position="378">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
