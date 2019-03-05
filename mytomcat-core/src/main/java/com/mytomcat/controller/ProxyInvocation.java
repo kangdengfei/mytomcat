@@ -1,6 +1,7 @@
 package com.mytomcat.controller;
 
 import com.mytomcat.annotation.Param;
+import com.mytomcat.converter.PrimitiveTypeUtil;
 import com.mytomcat.threadlocal.MyThreadLocal;
 import com.mytomcat.utils.HttpRequestUtil;
 import org.slf4j.Logger;
@@ -9,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
+import java.lang.reflect.Type;
 import java.util.List;
 import java.util.Map;
 
@@ -64,6 +66,9 @@ public class ProxyInvocation {
                 Parameter parameter = parameters[i];
                 if (parameter.isAnnotationPresent(Param.class)){
                     Param annotation = parameter.getAnnotation(Param.class);
+                    //生成当前的调用参数
+
+
                 }else {
                     //没有注解
                 }
@@ -73,6 +78,26 @@ public class ProxyInvocation {
             }
 
             return null;
+        }
+
+        private Object parseParameter(Map<String, List<String>> paramMap,Class<?> type,Param param,Method method,int index){
+            Object val;
+            String key = param.key();
+            if (key != null && key.length()>0){
+
+             if (Map.class.isAssignableFrom(Type.class)){
+
+             }else {
+                 List<String> list = paramMap.get(key);
+                 if (list!= null){
+                     if(PrimitiveTypeUtil.isPriType(type)){
+
+                     }
+
+                 }
+
+             }
+            }
         }
     }
 

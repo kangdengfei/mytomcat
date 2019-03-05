@@ -74,7 +74,7 @@ public class DefaultBeanContext extends BaseBean implements BeanContext ,InitFun
         logger.info("[DefaultBeanContex] begin initBean");
         try {
 
-                Set<Class<?>> classSets = ClassScaner.scanPackageByAnnotation(CommonConstants.BEAN_SCAN_PACKAGE, Bean.class);
+            Set<Class<?>> classSets = ClassScaner.scanPackageByAnnotation(CommonConstants.BEAN_SCAN_PACKAGE, Bean.class);
             if (CollectionUtil.isNotEmpty(classSets)) {
                 /*
                  * 遍历所以类,找出有bean注解的Class，并且保存到beanmap中
@@ -222,6 +222,11 @@ public class DefaultBeanContext extends BaseBean implements BeanContext ,InitFun
     @Override
     public Object getBean(String name) {
         return beanMap.get(name);
+    }
+
+    @Override
+    public <T> T getBean(String name, Class<T> clazz) {
+        return null;
     }
 
 }
