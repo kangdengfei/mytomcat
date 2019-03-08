@@ -11,10 +11,10 @@ public class StringTest {
 
     @Test
     public void test(){
-        String string = "/test?name=lisi&age=12";
-        System.out.println(string.indexOf('?'));
-        System.out.println(string.substring(0,5));
-
+        String string = "/test?name？=lisi&age=12";
+        int i = string.indexOf('?');
+        System.out.println(i);
+        System.out.println(string.substring(0,i));
     }
 
 }

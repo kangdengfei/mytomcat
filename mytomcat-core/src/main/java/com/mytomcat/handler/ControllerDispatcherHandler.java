@@ -4,6 +4,7 @@ import cn.hutool.core.util.StrUtil;
 import com.mytomcat.context.DefaultHttpContext;
 import com.mytomcat.controller.ControllerContext;
 import com.mytomcat.controller.ControllerProxy;
+import com.mytomcat.controller.ProxyInvocation;
 import com.mytomcat.controller.imp.DefaultControllerContext;
 import com.mytomcat.http.HttpRenderUtil;
 import io.netty.channel.ChannelHandlerContext;
@@ -33,13 +34,15 @@ public class ControllerDispatcherHandler extends SimpleChannelInboundHandler<Htt
         FullHttpResponse response = null;
         try {
             response = invokeResponse(request);
-            writeResponse(response,ctx);
+
             //处理业务，找到对应的controllerProxy
         } catch (Exception e){
             logger.error("[ControllerDispatcherHandler] find error,cause by {}",e.getMessage(),e);
+            response = HttpRenderUtil.getNotFoundResponse();
         }
         finally {
-            ctx.flush();
+            writeResponse(response,ctx);
+
             ReferenceCountUtil.release(request);
         }
     }
@@ -50,12 +53,21 @@ public class ControllerDispatcherHandler extends SimpleChannelInboundHandler<Htt
         if (httpRequest.uri().equals("/") ) {
             return HttpRenderUtil.getDefaultResponse();
         } else {
-            ControllerProxy proxy = controllerContext.getProxy(httpRequest.method(), httpRequest.uri());
+            String uri = httpRequest.uri();
+            int i = uri.indexOf('?');
+            ControllerProxy proxy = controllerContext.getProxy(httpRequest.method(), uri.substring(0,i));
             if (proxy == null) {
                 httpResponse = HttpRenderUtil.getNotFoundResponse();
                 return httpResponse;
-            } else
-                return null;
+            } else{
+                try {
+                    Object result = ProxyInvocation.invoke(proxy);
+                    httpResponse = HttpRenderUtil.buildResponse(result, proxy.getResponseType());
+                } catch (Exception e) {
+                    logger.error("[ControllerDispatcherHandelr] get httpResponse find exception,cause by {}",e.getMessage(),e);
+                }
+            }
+                return httpResponse;
 
         }
     }
@@ -78,6 +90,7 @@ public class ControllerDispatcherHandler extends SimpleChannelInboundHandler<Htt
         heads.add(HttpHeaderNames.CONTENT_LENGTH, response.content().readableBytes()); // 3
         heads.add(HttpHeaderNames.CONNECTION, HttpHeaderValues.KEEP_ALIVE);
         ctx.write(response);
+        ctx.flush();
 
     }
 

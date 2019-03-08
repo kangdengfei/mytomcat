@@ -58,6 +58,16 @@ public class HttpRenderUtil {
     }
 
     /**
+     * ErrorResponse
+     * @param errorMessage
+     * @return
+     */
+    public static FullHttpResponse getErrorResponse(String errorMessage){
+
+    }
+
+
+    /**
      * 转换byte
      * @param content 内容
      * @return 响应对象
