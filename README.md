@@ -13,7 +13,7 @@
 
 
 
-####快速启动
+#### 快速启动
 项目启动值需要运行`ServerBootstrap`这个类，默认实现的是`NettyServer`这个类,如下所示：
 ```
 public class ServerBootstrap {
@@ -53,7 +53,6 @@ public interface BeanContext {
 public void initBean()  {
         logger.info("[DefaultBeanContex] begin initBean");
         try {
-
             Set<Class<?>> classSets = ClassScaner.scanPackageByAnnotation(CommonConstants.BEAN_SCAN_PACKAGE, Bean.class);
             if (CollectionUtil.isNotEmpty(classSets)) {
                 /*
@@ -83,8 +82,8 @@ public void initBean()  {
     }
 ```
 通过在指定路径下扫描出所有的类之后，把实例对象加入map中，但是对于已经加入过的bean 不能继续加入，需要获取bean时，直接通过nama到map中获取。
-
 通过 `@Bean`注解已经将所有的对象管理起来了，接下来将依赖到的其他bean通过`@Autowried`注解实现属性的依赖注入，这个注解可以修饰在类的属性或者set方法上。<br>
+
 **setter**注入
 ```
 private void propertyAnnotation(Object bean){
@@ -172,8 +171,7 @@ public interface BeanContextAware extends Aware {
      void setBeanContext(BeanContext beanContext);
 }
 ```
-接下来需要将 BeanContext 的实例注入到所有 BeanContextAware 的实现类中去。BeanContext 的实例很好得到，BeanContext 的实现类本身就是一个 BeanContext 的实例，并且可以将该实例设置为单例，这样的话所有需要获取 BeanContext 的地方都可以获取到同一个实例。
-拿到 BeanContext 的实例后，我们就需要扫描出所有实现了 BeanContextAware 接口的类，并实例化这些类，然后调用这些类的 setBeanContext 方法，参数就传我们拿到的 BeanContext 实例。
+接下来需要将 BeanContext 的实例注入到所有 BeanContextAware 的实现类中去。BeanContext 的实例很好得到，BeanContext 的实现类本身就是一个 BeanContext 的实例，并且可以将该实例设置为单例，这样的话所有需要获取 BeanContext 的地方都可以获取到同一个实例。拿到 BeanContext 的实例后，我们就需要扫描出所有实现了 BeanContextAware 接口的类，并实例化这些类，然后调用这些类的 setBeanContext 方法，参数就传我们拿到的 BeanContext 实例。
 ```
 public void processBeanContextAware() {
         Set<Class<?>> classSet = ClassScaner.scanPackageBySuper(CommonConstants.BEAN_SCAN_PACKAGE,BeanContextAware.class);
