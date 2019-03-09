@@ -5,10 +5,11 @@ import io.netty.handler.codec.http.HttpRequest;
 import io.netty.handler.codec.http.HttpResponse;
 import io.netty.handler.codec.http.cookie.Cookie;
 import io.netty.util.concurrent.FastThreadLocal;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Set;
-import java.util.logging.Logger;
+
 
 /**
  * @program: mytomcat
@@ -16,7 +17,7 @@ import java.util.logging.Logger;
  * @create: 2019-02-17 18:54
  **/
 public class DefaultHttpContext {
-    private static Logger logger = (Logger) LoggerFactory.getLogger(DefaultHttpContext.class);
+    private static Logger logger =  LoggerFactory.getLogger(DefaultHttpContext.class);
     private static final FastThreadLocal<DefaultHttpContext> CONTEXT_HOLDER = new FastThreadLocal<>();
     private HttpRequest request;
 

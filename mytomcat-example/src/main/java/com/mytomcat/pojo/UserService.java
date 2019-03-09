@@ -14,9 +14,7 @@ import org.junit.Before;
 public class UserService {
 
     public Student getStudent(Integer idex){
-        return new Student(22,"李晓明");
-
-
+        return new Student(idex,"李晓明");
     }
 }
 

@@ -1,5 +1,7 @@
 package com.mytomcat.http;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.mytomcat.common.enums.HtmlMakerEnum;
 import com.mytomcat.common.enums.ResponseType;
 import com.mytomcat.common.html.HtmlMaker;
@@ -63,7 +65,10 @@ public class HttpRenderUtil {
      * @return
      */
     public static FullHttpResponse getErrorResponse(String errorMessage){
-
+        JSONObject object = new JSONObject();
+        object.put("code",500);
+        object.put("message",errorMessage);
+        return buildResponse(object,ResponseType.JSON);
     }
 
 

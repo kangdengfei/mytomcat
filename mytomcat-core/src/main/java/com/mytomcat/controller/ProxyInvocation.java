@@ -1,6 +1,7 @@
 package com.mytomcat.controller;
 
 import com.mytomcat.annotation.Param;
+import com.mytomcat.context.DefaultHttpContext;
 import com.mytomcat.converter.PrimitiveConverter;
 import com.mytomcat.converter.PrimitiveTypeUtil;
 import com.mytomcat.threadlocal.MyThreadLocal;
@@ -41,19 +42,20 @@ public class ProxyInvocation {
             Class<?> cls = controller.getClass();
             Class<?>[] parameterTypes = method.getParameterTypes();
             Object [] parames = null;
-            Object result;
+            Object result = null;
             try {
                 parames = getParameters(method, parameterTypes);
-                method.invoke(controller,parames);
+                result = method.invoke(controller, parames);
             }catch (Exception e){
-                logger.error(e.getMessage());
+//                logger.error(e.getMessage());
+                throw new RuntimeException("出错啦");
             }
-            return null;
+            return result;
         }
 
         public Object [] getParameters(Method method,Class<?>[] parameterTypes){
             //获取参数
-            Map<String, List<String>> parameeterMap = HttpRequestUtil.getParameeterMap(MyThreadLocal.getInstance().getHttpRequest());
+            Map<String, List<String>> parameeterMap = HttpRequestUtil.getParameeterMap(DefaultHttpContext.currentContext().getRequest());
             //构建用于存放数据的数组
             Object [] params = new Object[parameterTypes.length];
             Parameter[] parameters = method.getParameters();

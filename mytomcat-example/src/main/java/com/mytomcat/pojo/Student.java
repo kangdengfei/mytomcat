@@ -1,5 +1,6 @@
 package com.mytomcat.pojo;
 
+import com.alibaba.fastjson.JSON;
 import com.mytomcat.annotation.Autowired;
 import com.mytomcat.annotation.Bean;
 
@@ -8,7 +9,7 @@ import com.mytomcat.annotation.Bean;
  * @author: KDF
  * @create: 2019-02-16 17:09
  **/
-
+@Bean
 public class Student {
     private int age;
     private String  name;
@@ -33,9 +34,19 @@ public class Student {
 
    }
 
+    @Override
+    public String toString() {
+        return JSON.toJSONString(this);
+    }
+
     public Student(int age, String name) {
         this.age = age;
         this.name = name;
+    }
+
+    public void say(){
+        System.out.println("hahh");
+
     }
 }
 

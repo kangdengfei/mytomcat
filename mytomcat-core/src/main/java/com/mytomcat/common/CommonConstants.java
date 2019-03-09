@@ -14,7 +14,7 @@ public class CommonConstants {
     /**
      * 服务端口号
      */
-    public static final int SERVER_PORT = 8888;
+    public static final int SERVER_PORT = 9999;
 
 
 }

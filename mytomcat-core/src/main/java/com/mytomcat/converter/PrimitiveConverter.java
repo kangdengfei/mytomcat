@@ -250,8 +250,5 @@ public final class PrimitiveConverter extends AbstractConverter {
 		return CONVERTER;
 	}
 
-	@Override
-	public Object convert(Object source, Class<?> toType, Object... patams) {
-		return null;
-	}
+
 }

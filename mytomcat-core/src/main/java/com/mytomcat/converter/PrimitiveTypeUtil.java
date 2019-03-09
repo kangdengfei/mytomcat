@@ -98,11 +98,11 @@ public class PrimitiveTypeUtil {
     }
 
     /**
-     * 判断是否为基本类型数组
+     * 判断是否为基本类型
      * @return
      */
     public static boolean isPriType(Class<?> cls) {
-        for (Class<?> priType : PRI_ARRAY_TYPE) {
+        for (Class<?> priType : PRI_TYPE) {
             if (priType.isAssignableFrom(cls))
                 return true;
 

@@ -1,6 +1,5 @@
 package com.mytomcat.handler;
 
-import cn.hutool.core.util.StrUtil;
 import com.mytomcat.context.DefaultHttpContext;
 import com.mytomcat.controller.ControllerContext;
 import com.mytomcat.controller.ControllerProxy;
@@ -32,18 +31,19 @@ public class ControllerDispatcherHandler extends SimpleChannelInboundHandler<Htt
     @Override
     public void channelRead0(ChannelHandlerContext ctx, HttpRequest request)  {
         FullHttpResponse response = null;
+        stageRequest(request,ctx);
         try {
             response = invokeResponse(request);
 
             //处理业务，找到对应的controllerProxy
         } catch (Exception e){
             logger.error("[ControllerDispatcherHandler] find error,cause by {}",e.getMessage(),e);
-            response = HttpRenderUtil.getNotFoundResponse();
+            response = HttpRenderUtil.getErrorResponse(e.getMessage());
         }
         finally {
             writeResponse(response,ctx);
 
-            ReferenceCountUtil.release(request);
+            DefaultHttpContext.clear();
         }
     }
 
@@ -65,6 +65,7 @@ public class ControllerDispatcherHandler extends SimpleChannelInboundHandler<Htt
                     httpResponse = HttpRenderUtil.buildResponse(result, proxy.getResponseType());
                 } catch (Exception e) {
                     logger.error("[ControllerDispatcherHandelr] get httpResponse find exception,cause by {}",e.getMessage(),e);
+                    httpResponse = HttpRenderUtil.getErrorResponse(e.getMessage());
                 }
             }
                 return httpResponse;

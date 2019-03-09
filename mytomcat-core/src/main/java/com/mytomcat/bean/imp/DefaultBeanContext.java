@@ -205,17 +205,13 @@ public class DefaultBeanContext extends BaseBean implements BeanContext ,InitFun
             try {
                 for (Class cls : classSet) {
                     if (!cls.isInterface() && BeanContextAware.class.isAssignableFrom(cls)) {
-//                        Constructor<?> constructor = cls.getDeclaredConstructor();
-//                        constructor.setAccessible(true);
                         BeanContextAware aware = (BeanContextAware)cls.newInstance();
                         aware.setBeanContext(getInstance());
                     }
                 }
             }catch (Exception e){
-
+                logger.error("[DefaultBeanContext] processBeanContextAware error,cause:{}",e.getMessage());
             }
-
-
         }
     }
 

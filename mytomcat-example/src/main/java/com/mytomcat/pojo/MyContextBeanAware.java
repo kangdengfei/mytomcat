@@ -1,5 +1,6 @@
 package com.mytomcat.pojo;
 
+import cn.hutool.core.util.StrUtil;
 import com.mytomcat.aware.BeanContextAware;
 import com.mytomcat.bean.BeanContext;
 import com.mytomcat.bean.imp.DefaultBeanContext;
@@ -14,6 +15,11 @@ public class MyContextBeanAware implements BeanContextAware {
     @Override
     public void setBeanContext(BeanContext beanContext) {
         this.context = beanContext;
+    }
+
+    public static void testBeanAware(){
+        Student bean = (Student) context.getBean("com.mytomcat.pojo.Student");
+        bean.say();
     }
 }
 

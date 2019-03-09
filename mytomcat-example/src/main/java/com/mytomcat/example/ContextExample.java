@@ -23,6 +23,7 @@ public class ContextExample {
         defaultBeanContext.processBeanContextAware();
         Student student = (Student) MyContextBeanAware.context.getBean("com.mytomcat.pojo.Student");
         student.say();
+        MyContextBeanAware.testBeanAware();
     }
 
 
