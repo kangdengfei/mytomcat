@@ -1,5 +1,6 @@
 package com.mytomcat.context;
 
+import cn.hutool.core.collection.CollectionUtil;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.http.HttpRequest;
 import io.netty.handler.codec.http.HttpResponse;
@@ -8,6 +9,7 @@ import io.netty.util.concurrent.FastThreadLocal;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.HashSet;
 import java.util.Set;
 
 
@@ -65,6 +67,16 @@ public class DefaultHttpContext {
         this.cookies = cookies;
     }
 
+
+    public DefaultHttpContext addCookie(Cookie cookie){
+        if (cookie != null){
+            if (CollectionUtil.isEmpty(cookies)){
+                cookies = new HashSet<>();
+            }
+            cookies.add(cookie);
+        }
+        return this;
+    }
 
     public static DefaultHttpContext currentContext(){
         DefaultHttpContext context = CONTEXT_HOLDER.get();
