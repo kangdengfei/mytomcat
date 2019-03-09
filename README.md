@@ -84,7 +84,7 @@ public void initBean()  {
 ```
 通过在指定路径下扫描出所有的类之后，把实例对象加入map中，但是对于已经加入过的bean 不能继续加入，需要获取bean时，直接通过nama到map中获取。
 
-通过 `@Bean`注解已经将所有的对象管理起来了，接下来将依赖到的其他bean通过`@Autowried`注解实现属性的依赖注入，这个注解可以修饰在类的属性或者set方法上。
+通过 `@Bean`注解已经将所有的对象管理起来了，接下来将依赖到的其他bean通过`@Autowried`注解实现属性的依赖注入，这个注解可以修饰在类的属性或者set方法上。<br>
 **setter**注入
 ```
 private void propertyAnnotation(Object bean){
