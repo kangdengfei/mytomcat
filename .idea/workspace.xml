@@ -3,18 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7181b93d-77e8-4d3f-ba2b-cffaef69823b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/imp/DefaultBeanContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/bean/imp/DefaultBeanContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/CommonConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/CommonConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/context/DefaultHttpContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/context/DefaultHttpContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ProxyInvocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ProxyInvocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/PrimitiveConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/PrimitiveConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/PrimitiveTypeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/PrimitiveTypeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/handler/ControllerDispatcherHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/handler/ControllerDispatcherHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/http/HttpRenderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/http/HttpRenderUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/ContextExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/ContextExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/MyContextBeanAware.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/MyContextBeanAware.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/UserService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -77,15 +65,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StudentController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StudentController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/StudentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="359">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
                 <element signature="e#492#493#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -131,18 +129,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="262">
               <caret line="74" selection-start-line="74" selection-end-line="74" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultControllerContext.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/imp/DefaultControllerContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -297,106 +283,6 @@
               <item name="md" type="462c0819:PsiDirectoryNode" />
               <item name="picture" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="converter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -419,11 +305,8 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/mytomcat-core/md/picture" />
-      <recent name="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/view" />
-      <recent name="$PROJECT_DIR$/mytomcat-core/src/main/java" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.mytomcat.converter" />
@@ -432,8 +315,12 @@
       <recent name="test" />
       <recent name="com.mytomac" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/md/picture" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/mytomcat-core/md/picture" />
+      <recent name="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/view" />
+      <recent name="$PROJECT_DIR$/mytomcat-core/src/main/java" />
     </key>
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
@@ -730,7 +617,7 @@
       <workItem from="1551589272106" duration="1378000" />
       <workItem from="1551771132474" duration="8101000" />
       <workItem from="1551836113444" duration="4588000" />
-      <workItem from="1552033545827" duration="13922000" />
+      <workItem from="1552033545827" duration="15373000" />
     </task>
     <task id="LOCAL-00001" summary="完成bean容器的初始化">
       <created>1550327316870</created>
@@ -872,7 +759,28 @@
       <option name="project" value="LOCAL" />
       <updated>1552038222663</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="完成get请求">
+      <created>1552116243187</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1552116243187</updated>
+    </task>
+    <task id="LOCAL-00022" summary="添加ignore文件">
+      <created>1552116376472</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1552116376472</updated>
+    </task>
+    <task id="LOCAL-00023" summary="添加新图片">
+      <created>1552116729892</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1552116729892</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -908,11 +816,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158022000" />
+    <option name="totallyTimeSpent" value="159473000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -999,7 +906,10 @@
     <MESSAGE value="数据类型转换" />
     <MESSAGE value="处理get请求" />
     <MESSAGE value="处理服务端错误信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="处理服务端错误信息" />
+    <MESSAGE value="完成get请求" />
+    <MESSAGE value="添加ignore文件" />
+    <MESSAGE value="添加新图片" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加新图片" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1502,16 +1412,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/Router/imp/DefaultRouterContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2071">
-          <caret line="113" column="28" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final-sources.jar!/io/netty/handler/codec/http/HttpMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1913,12 +1813,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/StudentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="359">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
             <element signature="e#492#493#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
         </state>
       </provider>
     </entry>
