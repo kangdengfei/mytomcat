@@ -9,7 +9,6 @@ import com.mytomcat.http.HttpRenderUtil;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.http.*;
-import io.netty.util.ReferenceCountUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,7 +17,7 @@ import org.slf4j.LoggerFactory;
  * @author: KDF
  * @create: 2019-02-19 21:34
  **/
-public class ControllerDispatcherHandler extends SimpleChannelInboundHandler<HttpRequest> {
+public class ControllerDispatcherHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
     private static final Logger logger = LoggerFactory.getLogger(ControllerDispatcherHandler.class);
 
     private ControllerContext controllerContext = DefaultControllerContext.gerInstance();
@@ -29,7 +28,7 @@ public class ControllerDispatcherHandler extends SimpleChannelInboundHandler<Htt
      * @throws Exception
      */
     @Override
-    public void channelRead0(ChannelHandlerContext ctx, HttpRequest request)  {
+    public void channelRead0(ChannelHandlerContext ctx, FullHttpRequest request)  {
         FullHttpResponse response = null;
         stageRequest(request,ctx);
         try {
@@ -55,7 +54,8 @@ public class ControllerDispatcherHandler extends SimpleChannelInboundHandler<Htt
         } else {
             String uri = httpRequest.uri();
             int i = uri.indexOf('?');
-            ControllerProxy proxy = controllerContext.getProxy(httpRequest.method(), uri.substring(0,i));
+            uri = i == -1 ? uri:uri.substring(0,i);
+            ControllerProxy proxy = controllerContext.getProxy(httpRequest.method(), uri);
             if (proxy == null) {
                 httpResponse = HttpRenderUtil.getNotFoundResponse();
                 return httpResponse;

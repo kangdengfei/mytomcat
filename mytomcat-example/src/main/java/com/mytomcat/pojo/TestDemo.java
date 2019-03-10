@@ -52,6 +52,18 @@ public class TestDemo {
         Method speak = cls.getMethod("speak",new Class[]{String.class});
         Object nihao = speak.invoke(person, "nihao");
         System.out.println(nihao);
+
+        Method getStudent = cls.getMethod("getStudent", new Class[]{MyRquest.class});
+        Object myRquest = new MyRquest("小名",12);
+        Object[] objects = new Object[1];
+        objects[0] = myRquest;
+//        Map myRquest = new HashMap();
+//        myRquest.put("name","wee");
+//        myRquest.put("age",12);
+        Object invoke = getStudent.invoke(person, objects);
+        System.out.println(invoke);
+
+
         Method doWork = cls.getMethod("doWork",  new Class[]{int.class,String.class});
         doWork.getGenericExceptionTypes();
         doWork.invoke(person,2,"吃饭");
@@ -64,8 +76,6 @@ public class TestDemo {
             System.out.println(true);
         }
     }
-
-
 }
 
 

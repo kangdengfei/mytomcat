@@ -25,6 +25,10 @@ public class Person {
         return "大家好";
     }
 
+    public Student getStudent(MyRquest myRquest){
+        return new Student(myRquest.getAge(),myRquest.getName());
+    }
+
     public void doWork(@Param @Autowired  int day, String string){
         System.out.println("this is " +day+" "+string);
     }

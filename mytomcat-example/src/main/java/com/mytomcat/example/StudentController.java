@@ -1,6 +1,9 @@
 package com.mytomcat.example;
 
 import com.mytomcat.annotation.*;
+import com.mytomcat.common.enums.RequestMethod;
+import com.mytomcat.common.enums.ResponseType;
+import com.mytomcat.pojo.MyRquest;
 import com.mytomcat.pojo.Student;
 import com.mytomcat.pojo.UserService;
 
@@ -18,6 +21,13 @@ public class StudentController {
     public Student getStudent(@Param(key="id", notNull=true) Integer id){
         return userService.getStudent(id);
     }
+
+    @RequestMapping(path = "/add",requestMethod = RequestMethod.PSOT,responseType = ResponseType.JSON)
+    public Student queryStudent(MyRquest myRequest){
+        return new Student(myRequest.getAge(),myRequest.getName());
+    }
+
+
 }
 
 

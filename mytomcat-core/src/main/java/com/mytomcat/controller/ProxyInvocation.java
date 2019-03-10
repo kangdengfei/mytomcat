@@ -6,10 +6,12 @@ import com.mytomcat.converter.PrimitiveConverter;
 import com.mytomcat.converter.PrimitiveTypeUtil;
 import com.mytomcat.threadlocal.MyThreadLocal;
 import com.mytomcat.utils.HttpRequestUtil;
+import org.apache.commons.beanutils.BeanUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.lang.annotation.Annotation;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 import java.lang.reflect.Type;
@@ -53,11 +55,12 @@ public class ProxyInvocation {
             return result;
         }
 
-        public Object [] getParameters(Method method,Class<?>[] parameterTypes){
+        public Object [] getParameters(Method method,Class<?>[] parameterTypes) throws Exception {
             //获取参数
-            Map<String, List<String>> parameeterMap = HttpRequestUtil.getParameeterMap(DefaultHttpContext.currentContext().getRequest());
+            Map<String, List<String>> paramMap = HttpRequestUtil.getParameeterMap(DefaultHttpContext.currentContext().getRequest());
             //构建用于存放数据的数组
             Object [] params = new Object[parameterTypes.length];
+            //获取方法的所有参数
             Parameter[] parameters = method.getParameters();
             Annotation[][] parameterAnnotations = method.getParameterAnnotations();
 
@@ -66,14 +69,19 @@ public class ProxyInvocation {
                 Object param;
                 Class<?> type = parameterTypes[i];
                 Parameter parameter = parameters[i];
+                Annotation[] annotations = parameter.getAnnotations();
                 if (parameter.isAnnotationPresent(Param.class)){
                     Param annotation = parameter.getAnnotation(Param.class);
                     //生成当前的调用参数
-                    Object val = parseParameter(parameeterMap, type, annotation, null, 0);
+                    Object val = parseParameter(paramMap, type, annotation, null, 0);
 
                     params[i] = val;
-                }else {
+                }else if (annotations == null || annotations.length == 0){
                     //没有注解
+                    // 封装对象类型的parameter
+                    param =  type.newInstance();
+                    BeanUtils.populate(param,paramMap);
+                    params[i] = param;
                 }
             }
             return params;

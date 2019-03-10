@@ -61,7 +61,7 @@ public class DefaultControllerContext implements ControllerContext {
 
     @Override
     public ControllerProxy getProxy(HttpMethod httpMethod, String uri) {
-        //todo
+        //todo 这个匹配有点粗糙
         if (proxyMap.containsKey(uri)){
             return proxyMap.get(uri);
         }else

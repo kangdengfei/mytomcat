@@ -11,7 +11,7 @@ public class StringTest {
 
     @Test
     public void test(){
-        String string = "/test?name？=lisi&age=12";
+        String string = "/test/name";
         int i = string.indexOf('?');
         System.out.println(i);
         System.out.println(string.substring(0,i));
