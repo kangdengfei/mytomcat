@@ -27,7 +27,7 @@ public class DefaultCookieManager implements CookieManager {
 
     private DefaultCookieManager(){};
 
-    private CookieManager getInstance(){
+    public static CookieManager getInstance(){
         if (cookieManager == null){
             synchronized (DefaultCookieManager.class){
                 if (cookieManager == null)

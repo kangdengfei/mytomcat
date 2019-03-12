@@ -1,5 +1,6 @@
 package com.mytomcat.handler;
 
+import cn.hutool.core.collection.CollectionUtil;
 import com.mytomcat.context.DefaultHttpContext;
 import com.mytomcat.controller.ControllerContext;
 import com.mytomcat.controller.ControllerProxy;
@@ -9,8 +10,12 @@ import com.mytomcat.http.HttpRenderUtil;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.http.*;
+import io.netty.handler.codec.http.cookie.Cookie;
+import io.netty.handler.codec.http.cookie.ServerCookieEncoder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Set;
 
 /**
  * @program: mytomcat
@@ -30,6 +35,8 @@ public class ControllerDispatcherHandler extends SimpleChannelInboundHandler<Ful
     @Override
     public void channelRead0(ChannelHandlerContext ctx, FullHttpRequest request)  {
         FullHttpResponse response = null;
+
+
         stageRequest(request,ctx);
         try {
             response = invokeResponse(request);
@@ -45,6 +52,8 @@ public class ControllerDispatcherHandler extends SimpleChannelInboundHandler<Ful
             DefaultHttpContext.clear();
         }
     }
+
+
 
     private FullHttpResponse invokeResponse(HttpRequest httpRequest) {
         FullHttpResponse httpResponse = null;
@@ -86,13 +95,22 @@ public class ControllerDispatcherHandler extends SimpleChannelInboundHandler<Ful
     }
 
     public void writeResponse(FullHttpResponse response,ChannelHandlerContext ctx){
-        HttpHeaders heads = response.headers();
-//        heads.add(HttpHeaderNames.CONTENT_TYPE, HttpHeaderValues.TEXT_PLAIN + "; charset=UTF-8");
-        heads.add(HttpHeaderNames.CONTENT_LENGTH, response.content().readableBytes()); // 3
-        heads.add(HttpHeaderNames.CONNECTION, HttpHeaderValues.KEEP_ALIVE);
+        buildHeader(response);
         ctx.write(response);
         ctx.flush();
 
+    }
+
+    public void buildHeader(FullHttpResponse response){
+        HttpHeaders headers = response.headers();
+        headers.add(HttpHeaderNames.CONTENT_LENGTH, response.content().readableBytes()); // 3
+        headers.add(HttpHeaderNames.CONNECTION, HttpHeaderValues.KEEP_ALIVE);
+        Set<Cookie> cookies = DefaultHttpContext.currentContext().getCookies();
+        if (CollectionUtil.isNotEmpty(cookies)){
+            for (Cookie cookie : cookies){
+                headers.add(HttpHeaderNames.SET_COOKIE,ServerCookieEncoder.STRICT.encode(cookie));
+            }
+        }
     }
 
 }

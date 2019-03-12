@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7181b93d-77e8-4d3f-ba2b-cffaef69823b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/enums/ContentType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/MyRquest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/filter/AbstractLinkedProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/filter/LinkedProcessorChain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/filter/Processor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/utils/IDFactoryUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/BenchmarkTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/CookieController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mytomcat-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/connector/NettyHttpServerInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/connector/NettyHttpServerInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ProxyInvocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ProxyInvocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/imp/DefaultControllerContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/imp/DefaultControllerContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/cookie/imp/DefaultCookieManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/cookie/imp/DefaultCookieManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/handler/ControllerDispatcherHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/handler/ControllerDispatcherHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/utils/HttpRequestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/utils/HttpRequestUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/StringTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/TestDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/TestDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mytomcat-example/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-example/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,105 +27,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProxyInvocation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ProxyInvocation.java">
+      <file leaf-file-name="SimpleChannelInboundHandler.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final-sources.jar!/io/netty/channel/SimpleChannelInboundHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="608">
+              <caret line="47" column="72" selection-start-line="47" selection-start-column="72" selection-end-line="47" selection-end-column="72" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyRquest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/MyRquest.java">
+      <file leaf-file-name="IDFactoryUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/utils/IDFactoryUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HttpRenderUtil.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/http/HttpRenderUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NettyServer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/connector/NettyServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/StudentController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#622#623#0" expanded="true" />
-                <element signature="e#853#854#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NettyHttpServerInitializer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/connector/NettyHttpServerInitializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HttpServerCodec.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final-sources.jar!/io/netty/handler/codec/http/HttpServerCodec.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-              <folding>
-                <element signature="e#1600#1601#0" expanded="true" />
-                <element signature="e#1638#1639#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HttpRequestUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/utils/HttpRequestUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="106" selection-start-line="106" selection-end-line="106" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControllerDispatcherHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/handler/ControllerDispatcherHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="489">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
@@ -135,11 +48,86 @@
       <file leaf-file-name="InitExecutor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/init/InitExecutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="352">
+              <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BenchmarkTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/BenchmarkTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Processor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/filter/Processor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractLinkedProcessor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/filter/AbstractLinkedProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="e#261#262#0" expanded="true" />
+                <element signature="e#287#288#0" expanded="true" />
+                <element signature="e#345#346#0" expanded="true" />
+                <element signature="e#377#378#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinkedProcessorChain.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/filter/LinkedProcessorChain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="511">
+              <caret line="28" column="37" lean-forward="true" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+              <folding>
+                <element signature="e#665#666#0" expanded="true" />
+                <element signature="e#696#697#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mytomcat-example/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="47" column="21" selection-start-line="36" selection-start-column="7" selection-end-line="47" selection-end-column="21" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mytomcat-core/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="512">
+              <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file leaf-file-name="ChannelInboundHandlerAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final-sources.jar!/io/netty/channel/ChannelInboundHandlerAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -169,13 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/enums/HtmlMakerEnum.java" />
-        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/view/HtmlKeyHolder.java" />
-        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/html/HtmlMaker.java" />
-        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/utils/HtmlContentUtil.java" />
-        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/html/imp/DefaultHtmlMaker.java" />
-        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/connector/Server.java" />
-        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/annotation/Order.java" />
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/ServerBootstrap.java" />
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/connector/NettyServer.java" />
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/init/InitExecutor.java" />
@@ -206,20 +187,27 @@
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/http/HttpRenderUtil.java" />
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/cookie/CookieManager.java" />
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/context/DefaultHttpContext.java" />
-        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/cookie/imp/DefaultCookieManager.java" />
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/enums/ContentType.java" />
         <option value="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/Rquest.java" />
         <option value="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/StudentController.java" />
         <option value="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/Person.java" />
-        <option value="$PROJECT_DIR$/mytomcat-core/pom.xml" />
         <option value="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/TestDemo.java" />
         <option value="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/StringTest.java" />
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/imp/DefaultControllerContext.java" />
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/utils/HttpRequestUtil.java" />
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/connector/NettyHttpServerInitializer.java" />
-        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/handler/ControllerDispatcherHandler.java" />
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ProxyInvocation.java" />
         <option value="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/MyRquest.java" />
+        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/cookie/imp/DefaultCookieManager.java" />
+        <option value="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/CookieController.java" />
+        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/handler/ControllerDispatcherHandler.java" />
+        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/utils/IDFactoryUtil.java" />
+        <option value="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/BenchmarkTest.java" />
+        <option value="$PROJECT_DIR$/mytomcat-example/pom.xml" />
+        <option value="$PROJECT_DIR$/mytomcat-core/pom.xml" />
+        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/filter/Processor.java" />
+        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/filter/AbstractLinkedProcessor.java" />
+        <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/filter/LinkedProcessorChain.java" />
       </list>
     </option>
   </component>
@@ -247,6 +235,15 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="com.mytomcat.example" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="com.mytomcat.example" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="mytomcat-core" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
@@ -261,10 +258,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="841" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-443" />
+    <option name="y" value="-1326" />
+    <option name="width" value="2560" />
+    <option name="height" value="1020" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -272,8 +270,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -324,47 +322,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="connector" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="context" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mytomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytomcat" type="b2602c69:ProjectViewProjectNode" />
@@ -425,7 +383,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -440,19 +398,9 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.mytomcat.converter" />
-      <recent name="com.mytomcat.common.view" />
-      <recent name="com.example" />
-      <recent name="test" />
-      <recent name="com.mytomac" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/md/picture" />
       <recent name="$PROJECT_DIR$" />
@@ -460,116 +408,16 @@
       <recent name="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/view" />
       <recent name="$PROJECT_DIR$/mytomcat-core/src/main/java" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/mytomcat.iml</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mytomcat.example" />
+      <recent name="com.mytomcat.converter" />
+      <recent name="com.mytomcat.common.view" />
+      <recent name="com.example" />
+      <recent name="test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -591,6 +439,17 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.mytomcat.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="IDFactoryUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mytomcat.utils.IDFactoryUtil" />
+      <module name="mytomcat-core" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mytomcat.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -621,29 +480,6 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.mytomcat.pojo" />
       <option name="MAIN_CLASS_NAME" value="com.mytomcat.pojo.StringTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="TestDemo.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mytomcat-example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mytomcat.pojo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.mytomcat.pojo" />
-      <option name="MAIN_CLASS_NAME" value="com.mytomcat.pojo.TestDemo" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -719,17 +555,17 @@
     <list>
       <item itemvalue="JUnit.TestDemo.test2" />
       <item itemvalue="JUnit.StringTest.test" />
-      <item itemvalue="JUnit.TestDemo.test" />
       <item itemvalue="Application.ServerBootStrapDemo" />
       <item itemvalue="Application.ContextExample" />
+      <item itemvalue="Application.IDFactoryUtil" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ServerBootStrapDemo" />
+        <item itemvalue="Application.IDFactoryUtil" />
         <item itemvalue="JUnit.StringTest.test" />
         <item itemvalue="JUnit.TestDemo.test2" />
         <item itemvalue="Application.ContextExample" />
-        <item itemvalue="JUnit.TestDemo.test" />
       </list>
     </recent_temporary>
   </component>
@@ -755,7 +591,9 @@
       <workItem from="1551589272106" duration="1378000" />
       <workItem from="1551771132474" duration="8101000" />
       <workItem from="1551836113444" duration="4588000" />
-      <workItem from="1552033545827" duration="35363000" />
+      <workItem from="1552033545827" duration="36682000" />
+      <workItem from="1552273879179" duration="11297000" />
+      <workItem from="1552372810456" duration="3235000" />
     </task>
     <task id="LOCAL-00001" summary="完成bean容器的初始化">
       <created>1550327316870</created>
@@ -932,7 +770,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552124934854</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="处理post请求">
+      <created>1552226016332</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1552226016332</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -968,42 +813,42 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179463000" />
+    <option name="totallyTimeSpent" value="195314000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="-443" y="-1326" width="2560" height="1020" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" weight="0.457606" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.3297568" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.46882793" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" weight="0.457606" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32793018" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23441397" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007153" side_tool="true" weight="0.10569106" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.32962668" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23397914" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.25797504" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17596567" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11477363" />
       <window_info anchor="bottom" id="SonarLint" order="7" weight="0.32917705" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32917705" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" weight="0.42126516" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32917705" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" weight="0.32917705" />
@@ -1063,7 +908,8 @@
     <MESSAGE value="添加ignore文件" />
     <MESSAGE value="添加新图片" />
     <MESSAGE value="添加cookie管理" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加cookie管理" />
+    <MESSAGE value="处理post请求" />
+    <option name="LAST_COMMIT_MESSAGE" value="处理post请求" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1291,43 +1137,43 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/handler/ControllerDispatcherHandler.java</url>
-          <line>34</line>
+          <line>41</line>
           <properties />
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/handler/ControllerDispatcherHandler.java</url>
-          <line>49</line>
+          <line>58</line>
           <properties />
           <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/handler/ControllerDispatcherHandler.java</url>
-          <line>59</line>
+          <line>68</line>
           <properties />
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/handler/ControllerDispatcherHandler.java</url>
-          <line>60</line>
+          <line>69</line>
           <properties />
           <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/handler/ControllerDispatcherHandler.java</url>
-          <line>58</line>
+          <line>67</line>
           <properties />
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/handler/ControllerDispatcherHandler.java</url>
-          <line>57</line>
+          <line>66</line>
           <properties />
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/handler/ControllerDispatcherHandler.java</url>
-          <line>38</line>
+          <line>45</line>
           <properties />
           <option name="timeStamp" value="77" />
         </line-breakpoint>
@@ -1375,7 +1221,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/handler/ControllerDispatcherHandler.java</url>
-          <line>51</line>
+          <line>60</line>
           <properties />
           <option name="timeStamp" value="86" />
         </line-breakpoint>
@@ -1447,13 +1293,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/handler/ControllerDispatcherHandler.java</url>
-          <line>32</line>
+          <line>39</line>
           <properties />
           <option name="timeStamp" value="101" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/handler/ControllerDispatcherHandler.java</url>
-          <line>79</line>
+          <line>88</line>
           <properties />
           <option name="timeStamp" value="102" />
         </line-breakpoint>
@@ -1471,7 +1317,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/handler/ControllerDispatcherHandler.java</url>
-          <line>64</line>
+          <line>73</line>
           <properties />
           <option name="timeStamp" value="106" />
         </line-breakpoint>
@@ -1595,6 +1441,12 @@
           <properties />
           <option name="timeStamp" value="128" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/imp/DefaultControllerContext.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/MyContextBeanAware.java</url>
           <line>15</line>
@@ -1610,130 +1462,14 @@
           <option name="timeStamp" value="95" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="129" />
+      <option name="time" value="130" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ControllerProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-          <folding>
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final-sources.jar!/io/netty/channel/SimpleChannelInboundHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/CommonConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.3.2/hutool-all-4.3.2-sources.jar!/cn/hutool/db/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-364">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final-sources.jar!/io/netty/handler/codec/http/cookie/Cookie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2047">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/cookie/CookieManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.3.2/hutool-all-4.3.2-sources.jar!/cn/hutool/core/map/MapUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
-          <folding>
-            <element signature="e#1225#1226#0" expanded="true" />
-            <element signature="e#1276#1277#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.3.2/hutool-all-4.3.2-sources.jar!/cn/hutool/core/collection/CollUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="1335" column="35" selection-start-line="1335" selection-start-column="35" selection-end-line="1335" selection-end-column="35" />
-          <folding>
-            <element signature="e#31386#31387#0" expanded="true" />
-            <element signature="e#31423#31424#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final-sources.jar!/io/netty/handler/codec/http/cookie/ServerCookieDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1478">
-          <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/cookie/imp/DefaultCookieManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="896">
-          <caret line="116" column="5" lean-forward="true" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1914#1915#0" expanded="true" />
-            <element signature="e#1950#1951#0" expanded="true" />
-            <element signature="e#2184#2185#0" expanded="true" />
-            <element signature="e#2253#2254#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final-sources.jar!/io/netty/handler/codec/http/HttpHeaderNames.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="149" column="36" selection-start-line="149" selection-start-column="36" selection-end-line="149" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/enums/ResponseType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/PrimitiveTypeUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
           <caret line="103" column="26" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1793,21 +1529,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
           <caret line="28" column="65" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar!/org/apache/commons/beanutils/BeanUtils.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -1830,10 +1553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
           <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
-          <folding>
-            <element signature="e#616#617#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1841,16 +1560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/AbstractConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1874,41 +1583,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ControllerContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/context/DefaultHttpContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/imp/DefaultControllerContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final-sources.jar!/io/netty/handler/codec/http/HttpObjectAggregator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
           <caret line="465" column="26" selection-start-line="465" selection-start-column="26" selection-end-line="465" selection-end-column="26" />
-          <folding>
-            <element signature="e#17211#17212#0" expanded="true" />
-            <element signature="e#17253#17254#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1916,10 +1594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
-          <folding>
-            <element signature="e#2681#2682#0" expanded="true" />
-            <element signature="e#2710#2711#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1927,10 +1601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="208" column="11" selection-start-line="208" selection-start-column="11" selection-end-line="208" selection-end-column="11" />
-          <folding>
-            <element signature="e#8635#8636#0" expanded="true" />
-            <element signature="e#8681#8682#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1975,59 +1645,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/connector/NettyServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
+        <state relative-caret-position="608">
           <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final-sources.jar!/io/netty/handler/codec/http/HttpServerCodec.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="418">
           <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-          <folding>
-            <element signature="e#1600#1601#0" expanded="true" />
-            <element signature="e#1638#1639#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/connector/NettyHttpServerInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        <state relative-caret-position="76">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/MyRquest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="228">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/init/InitExecutor.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.54/fastjson-1.2.54.jar!/com/alibaba/fastjson/JSONObject.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-2270">
+          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/utils/HttpRequestUtil.java">
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/cookie/CookieManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="277">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/cookie/imp/DefaultCookieManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/context/DefaultHttpContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/StudentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
+        <state relative-caret-position="219">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -2038,20 +1712,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ProxyInvocation.java">
+    <entry file="file://$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/DefaultRouterContextTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="171">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/CookieController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ControllerContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/imp/DefaultControllerContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1064">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/handler/ControllerDispatcherHandler.java">
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/utils/HttpRequestUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="494">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/converter/AbstractConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/controller/ProxyInvocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2060,10 +1775,105 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/http/HttpRenderUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="475">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/handler/ControllerDispatcherHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final-sources.jar!/io/netty/channel/ChannelInboundHandlerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final-sources.jar!/io/netty/channel/SimpleChannelInboundHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="47" column="72" selection-start-line="47" selection-start-column="72" selection-end-line="47" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/utils/IDFactoryUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/init/InitExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-example/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="47" column="21" selection-start-line="36" selection-start-column="7" selection-end-line="47" selection-end-column="21" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/BenchmarkTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/filter/Processor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/filter/AbstractLinkedProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/filter/LinkedProcessorChain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="28" column="37" lean-forward="true" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+          <folding>
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#696#697#0" expanded="true" />
           </folding>
         </state>
       </provider>
