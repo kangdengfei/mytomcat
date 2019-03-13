@@ -6,6 +6,8 @@ import com.mytomcat.controller.ControllerContext;
 import com.mytomcat.controller.ControllerProxy;
 import com.mytomcat.controller.ProxyInvocation;
 import com.mytomcat.controller.imp.DefaultControllerContext;
+import com.mytomcat.filter.FilterContext;
+import com.mytomcat.filter.LinkedProcessorChain;
 import com.mytomcat.http.HttpRenderUtil;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
@@ -39,11 +41,12 @@ public class ControllerDispatcherHandler extends SimpleChannelInboundHandler<Ful
 
         stageRequest(request,ctx);
         try {
+            LinkedProcessorChain chain = new  LinkedProcessorChain<Integer>();
+            FilterContext.getInstance().doFilter(request,chain);
             response = invokeResponse(request);
-
             //处理业务，找到对应的controllerProxy
         } catch (Exception e){
-            logger.error("[ControllerDispatcherHandler] find error,cause by {}",e.getMessage(),e);
+            logger.error("[ControllerDispatcherHandler] find error,cause by {}",e.getMessage());
             response = HttpRenderUtil.getErrorResponse(e.getMessage());
         }
         finally {
