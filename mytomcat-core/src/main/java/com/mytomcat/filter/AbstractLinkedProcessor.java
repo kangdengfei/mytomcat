@@ -5,9 +5,9 @@ package com.mytomcat.filter;
  * @author: KDF
  * @create: 2019-03-12 17:18
  **/
-public abstract class AbstractLinkedProcessor implements Processor {
+public abstract class AbstractLinkedProcessor<T ,R> implements Processor<T ,R> {
 
-    private AbstractLinkedProcessor next = null;
+    public AbstractLinkedProcessor next = null;
 
     public AbstractLinkedProcessor getNext(){
         return next;
@@ -18,17 +18,17 @@ public abstract class AbstractLinkedProcessor implements Processor {
     }
 
     @Override
-    public void process(Object content) {
+    public void process(T content,R object) {
 
-        doProcess(content);
+        doProcess(content,object);
         //调用下一个processor 进行处理
         if (next != null){
-            next.process(content);
+            next.process(content,object);
         }
 
     }
     //具体业务方法
-    public abstract void doProcess(Object content);
+    public abstract void doProcess(T t,R r);
 
 
 }

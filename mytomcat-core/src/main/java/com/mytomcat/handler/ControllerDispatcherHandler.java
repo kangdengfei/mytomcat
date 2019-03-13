@@ -41,8 +41,8 @@ public class ControllerDispatcherHandler extends SimpleChannelInboundHandler<Ful
 
         stageRequest(request,ctx);
         try {
-            LinkedProcessorChain chain = new  LinkedProcessorChain<Integer>();
-            FilterContext.getInstance().doFilter(request,chain);
+            LinkedProcessorChain chain = new  LinkedProcessorChain<FullHttpRequest ,FullHttpResponse>();
+            FilterContext.getInstance().doFilter(request,response,chain);
             response = invokeResponse(request);
             //处理业务，找到对应的controllerProxy
         } catch (Exception e){
