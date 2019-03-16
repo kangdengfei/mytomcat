@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 /**
  * @program: mytomcat
  * @author: KDF
- * @create: 2019-02-24 14:41
+ * @create: 2019-02-24
  **/
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE})

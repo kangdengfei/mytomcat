@@ -91,6 +91,25 @@ public class ControllerDispatcherHandler extends SimpleChannelInboundHandler<Ful
         // 将request和context存储到ThreadLocal中去，便于后期在其他地方获取并使用
         DefaultHttpContext.currentContext().setRequest(request).setContext(ctx);
     }
+
+    @Override
+    public void channelRegistered(ChannelHandlerContext ctx) throws Exception {
+        System.out.println("channelRegistered:"+ 2);
+        super.channelRegistered(ctx);
+    }
+
+    @Override
+    public void channelActive(ChannelHandlerContext ctx) throws Exception {
+        System.out.println("channelActive:"+ 1);
+        super.channelActive(ctx);
+    }
+
+    @Override
+    public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
+        System.out.println("channelReadComplete:" + 3);
+        super.channelReadComplete(ctx);
+    }
+
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
         cause.printStackTrace();

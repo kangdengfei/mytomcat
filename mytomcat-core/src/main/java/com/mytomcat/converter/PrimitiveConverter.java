@@ -6,10 +6,9 @@ import java.math.BigInteger;
 
 /**
  * 基本类型和基本类型数组转换器
- * 能够转换的基本类型仅限于com.sitechasia.webx.core.utils.populator.PrimitiveType中所定义的类型
  *
- * @see # com.sitechasia.webx.core.utils.populator.PrimitiveTypeUtil
- * @author houyi.wh
+ * @program: mytomcat
+ * @author KDF
  * @date 2017-10-20
  */
 public final class PrimitiveConverter extends AbstractConverter {

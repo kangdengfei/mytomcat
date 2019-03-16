@@ -19,7 +19,7 @@ import java.util.Map;
 /**
  * @program: mytomcat
  * @author: KDF
- * @create: 2019-02-28 14:26
+ * @create: 2019-02-28
  **/
 public class HttpRequestUtil {
 
