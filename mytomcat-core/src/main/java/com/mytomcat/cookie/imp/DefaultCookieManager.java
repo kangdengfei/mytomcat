@@ -4,6 +4,8 @@ import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.util.StrUtil;
 import com.mytomcat.context.DefaultHttpContext;
 import com.mytomcat.cookie.CookieManager;
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.handler.codec.http.FullHttpRequest;
 import io.netty.handler.codec.http.HttpHeaderNames;
 import io.netty.handler.codec.http.HttpHeaders;
 import io.netty.handler.codec.http.HttpRequest;
@@ -23,7 +25,11 @@ import java.util.Set;
  **/
 public class DefaultCookieManager implements CookieManager {
 
-    private static CookieManager cookieManager;
+    private static DefaultCookieManager cookieManager;
+
+    private  static HashMap<String,Set<Cookie>> cookieHolder = new HashMap<>();
+
+
 
     private DefaultCookieManager(){};
 
@@ -75,10 +81,18 @@ public class DefaultCookieManager implements CookieManager {
 
     @Override
     public void setCookie(Cookie cookie) {
+        ChannelHandlerContext context = DefaultHttpContext.currentContext().getContext();
         DefaultHttpContext.currentContext().addCookie(cookie);
+        String id = context.channel().id().asShortText();
+        if(cookieHolder.containsKey(id)){
+            cookieHolder.get(id).add(cookie);
+        }else {
+            Set<Cookie> cookies = new HashSet<>();
+            cookies.add(cookie);
+            cookieHolder.put(id,cookies);
+        }
     }
 
-    @Override
     public void setCookies() {
         Set<Cookie> cookies = getCookies();
         if (cookies != null){
@@ -127,6 +141,8 @@ public class DefaultCookieManager implements CookieManager {
         }
         return false;
     }
+
+
 }
 
 

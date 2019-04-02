@@ -17,12 +17,12 @@ import com.mytomcat.pojo.UserService;
 public class StudentController {
     @Autowired
     private UserService userService;
-    @RequestMapping(path = "/get")
+    @RequestMapping(path = "/getStudent")
     public Student getStudent(@Param(key="id", notNull=true) Integer id){
         return userService.getStudent(id);
     }
 
-    @RequestMapping(path = "/add",requestMethod = RequestMethod.PSOT,responseType = ResponseType.JSON)
+    @RequestMapping(path = "/addStudent",requestMethod = RequestMethod.PSOT,responseType = ResponseType.JSON)
     public Student queryStudent(MyRquest myRequest){
         return new Student(myRequest.getAge(),myRequest.getName());
     }

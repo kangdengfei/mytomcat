@@ -6,6 +6,8 @@ import com.mytomcat.controller.ControllerContext;
 import com.mytomcat.controller.ControllerProxy;
 import com.mytomcat.controller.ProxyInvocation;
 import com.mytomcat.controller.imp.DefaultControllerContext;
+import com.mytomcat.cookie.CookieManager;
+import com.mytomcat.cookie.imp.DefaultCookieManager;
 import com.mytomcat.filter.FilterContext;
 import com.mytomcat.filter.LinkedProcessorChain;
 import com.mytomcat.http.HttpRenderUtil;

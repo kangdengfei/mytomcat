@@ -2,6 +2,7 @@ package com.mytomcat.filter;
 
 import io.netty.handler.codec.http.FullHttpRequest;
 import io.netty.handler.codec.http.FullHttpResponse;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -23,12 +24,14 @@ public class LinkedProcessorChainFilter implements Filter<FullHttpRequest,FullHt
     }
 
     @Test
+    @Ignore
     public void test2(){
         Filter instance = FilterContext.getInstance();
 //        instance.doFilter();
     }
 
     @Test
+    @Ignore
     public void test3(){
         LinkedProcessorChain chain = new  LinkedProcessorChain<Integer,Integer>();
         chain.addLast(new AuthProcessor());
