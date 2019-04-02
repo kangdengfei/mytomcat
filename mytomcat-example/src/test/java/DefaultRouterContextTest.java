@@ -1,5 +1,3 @@
-package com.mytomcat.example;
-
 import com.mytomcat.Router.RouterContext;
 import com.mytomcat.Router.imp.DefaultRouterContext;
 import org.junit.Test;

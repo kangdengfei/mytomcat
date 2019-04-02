@@ -1,5 +1,3 @@
-package com.mytomcat.example;
-
 import com.mytomcat.bean.BeanContext;
 import com.mytomcat.bean.imp.DefaultBeanContext;
 import com.mytomcat.pojo.MyContextBeanAware;

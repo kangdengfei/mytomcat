@@ -129,6 +129,7 @@ public class ControllerDispatcherHandler extends SimpleChannelInboundHandler<Ful
         headers.add(HttpHeaderNames.CONNECTION, HttpHeaderValues.KEEP_ALIVE);
         Set<Cookie> cookies = DefaultHttpContext.currentContext().getCookies();
         if (CollectionUtil.isNotEmpty(cookies)){
+            //给对应的请求加cookie
             for (Cookie cookie : cookies){
                 headers.add(HttpHeaderNames.SET_COOKIE,ServerCookieEncoder.STRICT.encode(cookie));
             }
