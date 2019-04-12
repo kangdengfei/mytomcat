@@ -30,6 +30,7 @@ public class ServerBootstrap {
 启动成功后，浏览器输入 http://127.0.0.1:8888，可以看到初始页面如下：
 ![Alt text](./md/picture/default-index.png)
 
+
 ### IOC容器
 #### 容器定义
 通过注解方式，实现自己的IOC容器，首先定义一个BeanContext接口，如下所示:

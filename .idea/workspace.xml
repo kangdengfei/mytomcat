@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7181b93d-77e8-4d3f-ba2b-cffaef69823b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/md/article/mytomcat.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/md/article/mytomcat.md" beforeDir="false" afterPath="$PROJECT_DIR$/md/article/mytomcat.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,7 +39,21 @@
         <entry file="file://$PROJECT_DIR$/md/article/mytomcat.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor />
+              <first_editor relative-caret-position="-219">
+                <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="532">
+                <caret line="28" column="24" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="24" />
+              </first_editor>
               <second_editor />
             </state>
           </provider>
@@ -92,15 +104,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CookieManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/cookie/CookieManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="912">
-              <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DefaultHttpContext.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/context/DefaultHttpContext.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -140,7 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/Person.java" />
         <option value="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/TestDemo.java" />
         <option value="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/StringTest.java" />
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/connector/NettyHttpServerInitializer.java" />
@@ -191,6 +193,7 @@
         <option value="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/cookie/imp/DefaultCookieManager.java" />
         <option value="$PROJECT_DIR$/mytomcat-example/src/test/java/ContextExample.java" />
         <option value="$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/example/StudentController.java" />
+        <option value="$PROJECT_DIR$/md/article/mytomcat.md" />
       </list>
     </option>
   </component>
@@ -451,12 +454,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/mytomcat-example/src/test/java" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/md/picture" />
+      <recent name="$PROJECT_DIR$/mytomcat-example/src/main/resources" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/mytomcat-core/md/picture" />
+      <recent name="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/view" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.mytomcat.example" />
@@ -465,12 +471,9 @@
       <recent name="com.example" />
       <recent name="test" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/mytomcat-example/src/main/resources" />
-      <recent name="$PROJECT_DIR$/md/picture" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mytomcat-example/src/test/java" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/mytomcat-core/md/picture" />
-      <recent name="$PROJECT_DIR$/mytomcat-core/src/main/java/com/mytomcat/common/view" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -660,7 +663,7 @@
       <workItem from="1552981269000" duration="3394000" />
       <workItem from="1553137896980" duration="1126000" />
       <workItem from="1554122940402" duration="12709000" />
-      <workItem from="1555060502255" duration="279000" />
+      <workItem from="1555060502255" duration="911000" />
     </task>
     <task id="LOCAL-00001" summary="完成bean容器的初始化">
       <created>1550327316870</created>
@@ -893,7 +896,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554199652655</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="新增文章">
+      <created>1555061093888</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1555061093888</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -929,7 +939,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="248743000" />
+    <option name="totallyTimeSpent" value="249375000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -998,7 +1008,8 @@
     <MESSAGE value="配置文件动态配置端口" />
     <MESSAGE value="添加测完类" />
     <MESSAGE value="修改cookie" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改cookie" />
+    <MESSAGE value="新增文章" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增文章" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1643,14 +1654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-2516" />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mytomcat-example/src/main/java/com/mytomcat/pojo/Boy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1959,10 +1962,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="532">
+            <caret line="28" column="24" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="24" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/md/article/mytomcat.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor />
+          <first_editor relative-caret-position="-219">
+            <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
           <second_editor />
         </state>
       </provider>
