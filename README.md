@@ -1,5 +1,5 @@
 # mytomcat
-本项目是基于Netty实现自己的web容器，重复造轮子，来巩固相关知识点，详细设计方案点击[这里](https://github.com/kangdengfei/mytomcat/blob/master/md/article/mytomcat.md)
+本项目是基于Netty实现自己的web容器，重复造轮子，来巩固相关知识点，详细设计方案[点击这里](https://github.com/kangdengfei/mytomcat/blob/master/md/article/mytomcat.md)
 
 **功能**：
    + [x] **IOC容器**:通过自定注解`@Bean`实现对所有对象的管理,`通过@Autowired`注解实现对象的依赖注入
