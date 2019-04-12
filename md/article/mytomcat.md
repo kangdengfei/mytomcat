@@ -28,7 +28,7 @@ public class ServerBootstrap {
 }
 ```
 启动成功后，浏览器输入 http://127.0.0.1:8888，可以看到初始页面如下：
-![Alt text](./md/picture/default-index.png)
+![Alt text](./picture/default-index.png)
 
 
 ### IOC容器
@@ -324,7 +324,7 @@ public class LogProcessor extends AbstractLinkedProcessor<FullHttpRequest,FullHt
 }
 ```
 启动项目后访问 127.0.0.1:9999 ,可发现终端打印日志如下：
-![Alt text](./md/picture/filter.png)
+![Alt text](./picture/filter.png)
 
 至此filter过滤器的功能实现完成，目前实现了前置拦截功能，提前结束链式调用需要在相应的节点中抛出异常。后续功能继续完善。
 
