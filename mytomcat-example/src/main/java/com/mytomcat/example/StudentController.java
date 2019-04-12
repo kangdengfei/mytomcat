@@ -26,8 +26,6 @@ public class StudentController {
     public Student queryStudent(MyRquest myRequest){
         return new Student(myRequest.getAge(),myRequest.getName());
     }
-
-
 }
 
 
