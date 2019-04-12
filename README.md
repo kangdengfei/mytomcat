@@ -7,7 +7,7 @@
    + [x] **结果渲染**:对响应结果进行渲染支持html，json，plain格式
    + [x] **cookie管理**:内置cookie管理器
    + [x] **自动参数转换** 支持http请求参数对象转换成对象(基本数据类型，Map，List，JavaBean)
-   + [ ] **前置后置拦截器**
+   + [x] **Filter拦截器**
    + [ ] **session管理**
   
 
