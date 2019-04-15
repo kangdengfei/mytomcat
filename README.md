@@ -29,11 +29,11 @@ public class ServerBootstrap {
 ![Alt text](./md/picture/default-index.png)
 
 
-####Bean管理
+#### Bean管理
 仿照 Spring，我们实习自己的IOC容器，可以通过自定义注解`@Bean`对所有的对象进行管理，`@Autowried`注解实现属性的依赖注入。
 **Tips：** 更多信息请查看wiki: [Bean][1]
 
-####自定义路由
+#### 自定义路由
 仿照 Spring，我们可以通过`@Controller`,注解来自定义一个Controller.`@RequestMapping`  注解用在方法上。通过`@Controller`+`@RequestMapping`可以唯一定义一个http请求。
 `@Param` 注解用在方法参数上，通过使用该注解可以自动将基本类型转换成POJO对象。
 **Tips：** 更多信息请查看wiki: [Router][2]
